@@ -99,9 +99,9 @@ header {
   padding-top: 80px;
 }
 
-.watch__wrapper {
+.watch__wrapper,
+.backstage__wrapper {
   padding: 0 220px;
-  /* margin-bottom: 60px; */
 }
 
 .watch__ellipse {
@@ -165,4 +165,40 @@ color: #FFFFFF;
 .watch__button:active {
   transform: scale(1);
   transition: 0.3s;
+}
+
+/* Backstage */
+
+.backstage__wrapper {
+  margin-top: 140px;
+  display: flex;
+  gap: 87px;
+}
+
+.backstage__img {
+  height: 403px;
+  min-width: 609px;
+  background: url('../assets/images/bamboo-cap.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.backstage__text {
+  color: #333B41;
+}
+.backstage__title {
+  line-height: 120%;
+  font-size: 3rem;
+}
+
+.backstage__p1 {
+  line-height: 130%;
+}
+
+.backstage__p2 {
+  line-height: 130%;
+  font-size: 1.5rem;
+}
+
+.backstage__p4 {
+  line-height: 140%;
 }
