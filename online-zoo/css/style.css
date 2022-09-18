@@ -1,56 +1,71 @@
-/* Normalize */
-
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+body {
   font-family: 'Roboto';
 }
-input,button,textarea{font-family:inherit;}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"],
-input[type="range"],
-input[type="text"] {
-  cursor: pointer;
-  overflow: visible;
+header,
+main,
+footer {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-button[disabled],
-html input[disabled] {
-  cursor: default;
+/* Header */
+
+header {
+  height: 80px;
+  color: white;
+  background: #000000;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+  padding: 0 220px;
 }
 
-/* ------------------ */
+.header__title {
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  margin-right: 58px;
+}
+
+.header__logo {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin: 3.55px 4.75px;
+}
+
+.header__nav {
+  flex: 1 1 auto;
+}
+
+.header__list {
+  display: flex;
+  gap: 58px
+}
+
+.header__link,
+.header__designed {
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.3s;
+  color: white;
+}
+
+
+.header__link:hover,
+.header__link:focus {
+  transform: scale(1.2);
+  transition: 0.3s;
+  color: orange;
+}
+
+.header__link:active {
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+
+
