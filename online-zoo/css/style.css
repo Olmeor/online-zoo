@@ -91,3 +91,78 @@ header {
 
 /* Watch */
 
+.watch {
+  height: 780px;
+  background: url('../assets/images/giant_panda.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
+.watch__wrapper {
+  padding: 0 220px;
+  /* margin-bottom: 60px; */
+}
+
+.watch__ellipse {
+  position: relative;
+  width: 465px;
+  height: 465px;
+  left: calc(50% - 465px/2 + 239.5px);
+  top: 12px;
+  border-radius: 50%;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.watch__text {
+  position: relative;
+width: 500px;
+/* height: 400px; */
+/* left: 25vw;
+/* font-style: normal; */
+left: calc(50% - 500.31px/2 + 330.15px);
+top: -400px;
+font-weight: 700;
+font-size: 6.66em;
+line-height: 75%;
+/* or 80px */
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.watch__text span {
+  color: #FFEE2E;
+}
+
+.watch__button {
+  position: relative;
+  width: 298px;
+  height: 54px;
+  left: calc(50% - 298px/2 + 332px);
+  /* top: 626px; */
+  top: -340px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 25px;
+
+  line-height: 140%;
+  /* or 22px */
+  /* text-align: center; */
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  transition: 0.3s;
+}
+
+.watch__button:hover,
+.watch__button:focus {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.watch__button:active {
+  transform: scale(1);
+  transition: 0.3s;
+}
