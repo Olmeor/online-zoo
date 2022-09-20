@@ -324,3 +324,53 @@ color: #FFFFFF;
   transform: scale(1);
   transition: 0.3s;
 }
+
+.feed {
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+  padding: 70px 0 100px 0;
+}
+
+.feed__wrapper {
+  margin: 0 220px;
+  color: #333B41;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+.feed__title {
+  font-size: 3rem;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+  text-align: center;
+  color: #FE9013;
+  margin-bottom: 30px;
+}
+
+.feed__p1 {
+  font-size: 1.5rem;
+  line-height: 120%;
+  margin-bottom: 40px;
+  padding-left: 100px;
+}
+
+.feed__p2 {
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 10px;
+  padding-left: 100px;
+}
+
+.feed__p3 {
+  line-height: 130%;
+  margin-bottom: 60px;
+  padding-left: 100px;
+}
+
+.feed__subtitle {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
