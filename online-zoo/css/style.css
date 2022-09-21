@@ -177,7 +177,9 @@ color: #FFFFFF;
 
 .backstage__img {
   height: 403px;
-  min-width: 609px;
+  /* width: 100%;
+  max-width: 609px; */
+  flex: 0 1 250%;
   background: url('../assets/images/bamboo-cap.jpg') no-repeat center;
   background-size: cover;
   margin-bottom: 180px;
@@ -200,7 +202,7 @@ color: #FFFFFF;
 .backstage__p2 {
   line-height: 120%;
   font-size: 1.5rem;
-  margin-bottom: 34px;
+  margin: 34px;
 }
 
 .backstage__p4 {
@@ -218,23 +220,27 @@ color: #FFFFFF;
 	justify-content: center;
 	align-items: stretch;
 	align-content: stretch;
-  gap: 20px;
-  margin-bottom: 80px;
+  /* gap: 20px; */
+  margin: 0 -15px 80px -15px;
 }
 
 .pets__cards {
+  flex: 0 1 33.333%;
+  padding: 0 15px;
+}
+
+.pets__border {
   border-radius: 5px;
   border: 1px solid #FA6F32;
   /* background: linear-gradient(45deg, #FA6F32, #FE9013); */
-  /* flex: 0 1 33.333%; */
-  /* padding: 0 15px; */
-
+  margin-bottom: 20px;
 }
 
 .pets__image {
-  height: 366px;
-  width: 366px;
-  background-size: cover;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
 }
 
 .pandas {
@@ -346,6 +352,7 @@ color: #FFFFFF;
   /* identical to box height, or 58px */
   text-align: center;
   color: #FE9013;
+  padding-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -367,6 +374,10 @@ color: #FFFFFF;
   line-height: 130%;
   margin-bottom: 60px;
   padding-left: 100px;
+}
+
+.feed__p3 a {
+  text-decoration: underline;
 }
 
 .feed__subtitle {
