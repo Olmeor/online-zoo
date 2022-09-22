@@ -257,7 +257,7 @@ color: #FFFFFF;
 
 .pets__image:hover {
   transform: scale(1.10);
-  /* filter: brightness(0.7); */
+  filter: brightness(0.7);
 }
 
 .pets__cards:hover .pets__title {
@@ -269,6 +269,7 @@ color: #FFFFFF;
 .pets__cards:hover .pets__title-wrapper {
   background: #00000050;
   transition: 0.7s;
+  z-index: 10;
 }
 
 .pandas {
@@ -339,32 +340,16 @@ color: #FFFFFF;
 .pets__arrow_left {
   position: absolute;
   background: url('../assets/icons/pets_arrow-left.svg') no-repeat center center;
-  background-color: #F9804B;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  top: calc(50% - 40px);
-  cursor: pointer;
-  transition-duration: 0.4s;
   left: -7%;
-}
-
-.pets__arrow_left:hover {
-  transform: scale(1.10);
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.pets__arrow_left:active {
-  transform: scale(1);
-  background-color: #4B9200;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 
 .pets__arrow_right {
   position: absolute;
   background: url('../assets/icons/pets_arrow-right.svg') no-repeat center center;
+  right: -7%;
+}
+
+.pets__arrow {
   background-color: #F9804B;
   width: 60px;
   height: 60px;
@@ -372,16 +357,15 @@ color: #FFFFFF;
   top: calc(50% - 40px);
   cursor: pointer;
   transition-duration: 0.4s;
-  right: -7%;
 }
 
-.pets__arrow_right:hover {
+.pets__arrow:hover {
   transform: scale(1.10);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
-.pets__arrow_right:active {
+.pets__arrow:active {
   transform: scale(1);
   background-color: #4B9200;
   -webkit-transition-duration: 0.4s; /* Safari */
