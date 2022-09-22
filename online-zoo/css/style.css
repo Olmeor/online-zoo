@@ -336,38 +336,6 @@ color: #FFFFFF;
   background-size: cover;
 }
 
-.pets__button {
-  width: 298px;
-  height: 54px;
-  /* background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%); */
-  background: #F9804B;
-  border-radius: 25px;
-  line-height: 140%;
-  /* or 22px */
-  /* text-align: center; */
-  text-transform: uppercase;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-	align-items: center;
-  transition: 0.3s;
-  margin: 0 auto;
-}
-
-.pets__button:hover {
-  transform: scale(1.05);
-  background: #E47209;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.pets__button:active {
-  transform: scale(1);
-  background: #4B9200;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
 .pets__arrow_left {
   position: absolute;
   background: url('../assets/icons/pets_arrow-left.svg') no-repeat center center;
@@ -420,6 +388,38 @@ color: #FFFFFF;
   transition-duration: 0.4s;
 }
 
+.pets__button {
+  width: 298px;
+  height: 54px;
+  /* background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%); */
+  background: #F9804B;
+  border-radius: 25px;
+  line-height: 140%;
+  /* or 22px */
+  /* text-align: center; */
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.pets__button:hover {
+  transform: scale(1.05);
+  background: #E47209;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.pets__button:active {
+  transform: scale(1);
+  background: #4B9200;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
 /* Feed */
 
 .feed {
@@ -435,6 +435,7 @@ color: #FFFFFF;
   backdrop-filter: blur(2px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 20px;
+  padding-bottom: 60px;
 }
 
 .feed__title {
@@ -468,11 +469,86 @@ color: #FFFFFF;
 }
 
 .feed__p3 a {
-  text-decoration: underline;
+  color: #333B41;
+  text-decoration: none;
+  border-bottom:1px solid #FA6F32;
 }
 
 .feed__subtitle {
   font-size: 2.25rem;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.feed__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+  margin-bottom: 60px;
+}
+
+.feed__image {
+  width: 168px;
+  height: 168px;
+  border-radius: 5px;
+  border: 1px solid #FA6F32;
+}
+
+.feed__pay {
+  background: url('../assets/icons/pay.svg') no-repeat center center;
+  background-color: #FFFFFF;
+}
+
+.feed__zoo {
+  background: url('../assets/icons/zoo.svg') no-repeat center center;
+  background-color: #FFFFFF;
+}
+
+.feed__monkey {
+  background: url('../assets/icons/monkey.svg') no-repeat center center;
+  background-color: #FFFFFF;
+}
+
+.feed__text {
+  line-height: 140%;
+  margin-top: 40px;
+  width: 168px;
+}
+
+.feed__arrow {
+  background: url('../assets/icons/feed-arrow.svg') no-repeat center center;
+  min-width: 70px;
+  height: 168px;
+}
+
+.feed__button {
+  width: 298px;
+  height: 54px;
+  /* background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%); */
+  background: #F9804B;
+  border-radius: 25px;
+  line-height: 140%;
+  /* or 22px */
+  /* text-align: center; */
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.feed__button:hover {
+  transform: scale(1.05);
+  background: #E47209;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.feed__button:active {
+  transform: scale(1);
+  background: #4B9200;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
