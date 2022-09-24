@@ -718,7 +718,7 @@ header {
   display: flex;
   justify-content: center;
 	align-items: center;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .testimonial__button:hover {
@@ -735,7 +735,105 @@ header {
 
 /* Footer */
 
+footer {
+  background: #111115;
+  height: 443px;
+}
 .footer__wrapper {
-  height: 100px;
-  background: blue;
+  width: 1160px;
+  background: red;
+  margin: 0 auto;
+  padding: 40px 0 50px 0;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 68px;
+}
+
+.footer__button {
+  width: 298px;
+  height: 54px;
+  background-color: #F9804B;
+  background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  transition: 0.4s;
+}
+
+.footer__button:hover {
+  transform: scale(1.05);
+  background: #E47209;
+  transition: all 0.4s ease;
+}
+
+.footer__button:active {
+  transform: scale(1);
+  background: #4B9200;
+  transition: all 0.4s ease;
+}
+
+.footer__social {
+  margin-top: 40px;
+}
+
+.footer__social_item {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.footer__social_logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.facebook {
+  background: url('../assets/icons/facebook_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.twitter {
+  background: url('../assets/icons/twitter_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.instagram {
+  background: url('../assets/icons/instagram_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.youtube {
+  background: url('../assets/icons/youtube_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.footer__social_name {
+  color: #FFFFFF;
+  padding-left: 12px;
+  line-height: 26px;
+  transition: all 0.4s ease;
+}
+
+.footer__social_item:active .footer__social_name {
+  color: #4B9200;
+  transition: all 0.4s ease;
+}
+
+.footer__social_item:active .facebook,
+.footer__social_item:active .twitter,
+.footer__social_item:active .instagram,
+.footer__social_item:active .youtube {
+  background-color: #4B9200;
+  transition: all 0.4s ease;
 }
