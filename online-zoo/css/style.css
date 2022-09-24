@@ -59,6 +59,7 @@ header {
 
 .header__list {
   display: flex;
+  margin-left: 2px;
 }
 
 .header__item {
@@ -116,7 +117,7 @@ header {
   position: relative;
   width: 500px;
   left: calc(50% - 500.31px/2 + 330.15px);
-  top: -400px;
+  top: -380px;
   font-weight: 700;
   font-size: 6.66em;
   line-height: 75%;
@@ -130,6 +131,7 @@ header {
 }
 
 .watch__button {
+  margin-top: 20px;
   position: relative;
   width: 298px;
   height: 54px;
@@ -202,10 +204,10 @@ header {
 .backstage__p2 {
   line-height: 120%;
   font-size: 1.5rem;
-  margin: 34px;
+  margin-bottom: 34px;
 }
 
-.backstage__p4 {
+.backstage__p3 {
   line-height: 140%;
 }
 
@@ -229,7 +231,7 @@ header {
   display: flex;
   flex-wrap: wrap;
 	justify-content: center;
-  margin: 0 -15px 80px -15px;
+  margin: 0 -15px 60px -15px;
   position: relative;
 }
 
@@ -245,18 +247,6 @@ header {
   margin-bottom: 20px;
 }
 
-/* .pets__border::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  border-radius: 7px;
-  z-index: -1;
-} */
-
 .pets__frame {
   overflow: hidden;
 }
@@ -271,7 +261,7 @@ header {
 }
 
 .pets__image:hover {
-  transform: scale(1.10);
+  transform: scale(1.055);
   filter: brightness(0.7);
 }
 
@@ -312,7 +302,7 @@ header {
 }
 
 .pets__title-wrapper {
-  padding: 8px 10px 14px 10px;
+  padding: 8px 10px 12px 15px;
   color: #000000;
   display: flex;
   justify-content: space-between;
@@ -327,6 +317,7 @@ header {
   font-weight: 500;
   line-height: 140%;
   text-transform: uppercase;
+  margin-bottom: -1px;
 }
 
 .pets__place {
@@ -353,13 +344,13 @@ header {
 .pets__arrow_left {
   position: absolute;
   background: url('../assets/icons/pets_arrow-left.svg') no-repeat center center;
-  left: -7%;
+  left: -5.5%;
 }
 
 .pets__arrow_right {
   position: absolute;
   background: url('../assets/icons/pets_arrow-right.svg') no-repeat center center;
-  right: -7%;
+  right: -5.5%;
 }
 
 .pets__arrow {
@@ -367,7 +358,7 @@ header {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  top: calc(50% - 40px);
+  top: calc(50% - 42px);
   cursor: pointer;
   transition-duration: 0.4s;
 }
@@ -442,14 +433,14 @@ header {
 .feed__p1 {
   font-size: 1.5rem;
   line-height: 120%;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   padding-left: 100px;
 }
 
 .feed__p2 {
   font-weight: 500;
   line-height: 130%;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   padding-left: 100px;
 }
 
@@ -506,14 +497,14 @@ header {
 
 .feed__text {
   line-height: 140%;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 168px;
 }
 
 .feed__arrow {
   background: url('../assets/icons/feed-arrow.svg') no-repeat center center;
   min-width: 70px;
-  height: 168px;
+  height: 158px;
 }
 
 .feed__button {
@@ -551,7 +542,7 @@ header {
   padding-top: 140px;
   background-image: url('../assets/images/leav_foto.png');
   background-repeat: no-repeat;
-  background-position: right 125%;
+  background-position: right 126%;
   z-index: -1;
   padding-bottom: 180px;
 }
@@ -679,7 +670,7 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   position: relative;
 }
 
@@ -755,7 +746,7 @@ footer {
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 68px;
+  margin-bottom: 66px;
 }
 
 .footer__button {
@@ -787,7 +778,7 @@ footer {
 }
 
 .footer__social {
-  margin-top: 40px;
+  margin-top: 46px;
 }
 
 .footer__social_wrapper {
@@ -864,11 +855,11 @@ footer {
 }
 
 .footer__list {
-  gap: 58px;
+  padding-bottom: 5px;
 }
 
 .footer__item {
-  margin-left: 0;
+  margin-left: 62px;
 }
 
 .footer__column_third {
@@ -941,11 +932,13 @@ footer {
 .footer__info {
   font-weight: 100;
   color: #FFFFFF50;
+  padding-bottom: 5px;
 }
 
 .footer__design {
   margin-bottom: 10px;
   text-align: end;
+  padding: 0 5px 5px 0;
 }
 
 .footer__right {
