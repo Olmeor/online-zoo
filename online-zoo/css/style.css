@@ -738,12 +738,18 @@ header {
 footer {
   background: #111115;
   height: 443px;
+  z-index: -10;
 }
 .footer__wrapper {
   width: 1160px;
-  background: red;
   margin: 0 auto;
   padding: 40px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__column {
+  flex: 0 1 33.333%;
 }
 
 .footer__logo {
@@ -783,9 +789,16 @@ footer {
   margin-top: 40px;
 }
 
+.footer__social_wrapper {
+  display: flex;
+}
+
 .footer__social_item {
   margin-bottom: 10px;
-  display: flex;
+}
+
+.footer__social_item:last-child {
+  margin-bottom: 0;
 }
 
 .footer__social_logo {
@@ -837,3 +850,92 @@ footer {
   background-color: #4B9200;
   transition: all 0.4s ease;
 }
+
+.footer__nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__list {
+  gap: 58px;
+}
+
+.footer__item {
+  margin-left: 0;
+}
+
+.footer__column h3 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+.footer__container {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__email {
+  max-width: 226px;
+  position: relative;
+  border-radius: 2px;
+  z-index: 0;
+  margin-left: 2px;
+}
+
+.footer__email::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.footer__input {
+  display: block;
+  width: 100%;
+  height: 41px;
+  background-color: #111115;
+  border-radius: 2px;
+  transition: ease-in-out .5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 1;
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.footer__input::placeholder {
+
+  color: #BDBDBD;
+}
+
+.footer__submit {
+  width: 129px;
+  height: 42px;
+  /* line-height: 42px; */
+  color: #333B41;
+  background: #F1F3F2;
+  border: 1px solid #333B41;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.footer__submit:active {
+  transform: scale(1.05);
+  transition: 0.4s;
+  color: #4B9200;
+  border: 1px solid #4B9200;
+}
+
+/* -------------- */
+
