@@ -92,7 +92,7 @@
         </form>
       </div>
       <form class="donate__form">
-        <input class="donate__input" type="number" onkeydown="event.target.value.length>3 && event.preventDefault()" max="9999" placeholder="Another amount">
+        <input class="donate__input" type="number" min="1" max="9999" step="1" placeholder="Another amount">
         <div class="donate__radio-wrapper">
           <div>
             <input type="radio" id="pay-monthly" name="donate__period" value="monthly">
@@ -108,7 +108,87 @@
       </form>
     </div>
   </div>
-
 </main>
+
+<footer>
+  <div class="footer__wrapper">
+    <div class="footer__column">
+      <a href="#">
+        <div class="header__title footer__logo">
+          <h1 class="header__text">PetStory<br>online</h1>
+        </div>
+      </a>
+      <a href="./donate.html">
+        <div class="footer__button">donate for volunteers</div>
+      </a>
+      <ul class="footer__social">
+        <li class="footer__social_item">
+          <a href="https://dzen.ru/" class="footer__social_link" target="_blank">
+            <div class="footer__social_wrapper">
+              <div class="footer__social_logo facebook"></div>
+              <p class="footer__social_name">Facebook</p>
+            </div>
+          </a>
+        </li>
+        <li class="footer__social_item">
+          <a href="https://vk.com/" class="footer__social_link" target="_blank">
+            <div class="footer__social_wrapper">
+              <div class="footer__social_logo twitter"></div>
+              <p class="footer__social_name">Twitter</p>
+            </div>
+          </a>
+        </li>
+        <li class="footer__social_item">
+          <a href="https://yarus.ru/" class="footer__social_link" target="_blank">
+            <div class="footer__social_wrapper">
+              <div class="footer__social_logo instagram"></div>
+              <p class="footer__social_name">Instagram</p>
+            </div>
+          </a>
+        </li>
+        <li class="footer__social_item">
+          <a href="https://rutube.ru/" class="footer__social_link" target="_blank">
+            <div class="footer__social_wrapper">
+              <div class="footer__social_logo youtube"></div>
+              <p class="footer__social_name">YouTube</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__column footer__nav">
+      <div class="header__nav">
+        <ul class="header__list footer__list">
+          <li class="header__item footer__item">
+            <a href="./index.html" class="header__link">  About</a>
+          </li>
+          <li class="header__item footer__item">
+            <a href="#map" class="header__link">Map</a>
+          </li>
+          <li class="header__item footer__item">
+            <a href="#zoos" class="header__link">Zoos</a>
+          </li>
+          <li class="header__item footer__item">
+            <a href="#contact" class="header__link">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__column footer__column_third">
+      <h3>Subscribe to our news</h3>
+      <div class="footer__container">
+        <input required type="email" class="footer__input" placeholder="Enter your email" />
+        <button type="submit" class="footer__submit">Submit</button>
+      </div>
+      <div class="footer__info">
+        <p class="footer__design">Designed by Alisa Samborskaya</p>
+        <p class="footer__right">©RSSchool & ©Yem Digital 2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

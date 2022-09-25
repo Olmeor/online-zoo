@@ -80,7 +80,6 @@ header {
 .header__link:focus,
 .header__designed:hover,
 .header__designed:focus {
-  /* transform: scale(1.2); */
   transition: 0.3s;
   color: #FE9013;
 }
@@ -90,23 +89,20 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
 }
 
 /* Donate */
 
 .donate__welcome {
-  height: 780px;
+  height: 386px;
   background: url('../assets/images/panda_bg.jpg') no-repeat center;
   background-size: cover;
-  margin-top: -80px;
-  padding-top: 80px;
 }
 
 .donate {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   opacity: 0.9;
-  padding: 70px 0 100px 0;
+  padding: 42px 0 180px 0;
 }
 
 .donate__container {
@@ -126,7 +122,7 @@ header {
   font-weight: 300;
   line-height: 140%;
   color: #FFFFFF;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   letter-spacing: 0.2px;
 }
 
@@ -144,7 +140,7 @@ header {
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  padding: 40px 92px 60px 92px;
+  padding: 38px 92px 65px 92px;
   display: flex;
   flex-direction: column
 }
@@ -154,8 +150,8 @@ header {
   line-height: 120%;
   text-align: center;
   color: #FE9013;
-  padding-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+  margin-left: -7px;
 }
 
 .donate__p1 {
@@ -170,6 +166,8 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 48px;
+  gap: 15px;
+  padding-right: 10px;
 }
 
 .donate__diet_text {
@@ -179,12 +177,14 @@ header {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+  padding-top: 35px;
 }
 
 .donate__diet_quote {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #000000;
+  line-height: 5.5rem;
 }
 
 .donate__diet_animal {
@@ -192,10 +192,10 @@ header {
 }
 
 .donate__diet_x {
-  background: url('../assets/icons/x_icon.svg');
-  width: 14px;
+  background: url('../assets/icons/x_icon.svg') no-repeat left;
+  width: 60px;
   height: 14px;
-  margin: 0 64px 0 11px;
+  margin-top: 25px;
 }
 
 .donate__diet_img {
@@ -207,10 +207,11 @@ header {
 .donate__diet_amount-text {
   line-height: 140%;
   color: #000000;
+  padding-left: 5px;
 }
 
 #form-wrapper {
-  padding-top: 10px;
+  padding-top: 15px;
   width: 100%;
   height: 100px;
   display: flex;
@@ -270,6 +271,7 @@ form #donate__amount-slider label::before {
   position: absolute;
   left: 50%;
   /* padding-top: 10px; */
+  top: 12%;
   transform: translate(-50%, 45px);
   font-size: 26px;
   font-weight: 500;
@@ -305,10 +307,9 @@ form #donate__amount-slider input:checked + label::before {
   color: #FE9013;
 }
 
-form #donate__amount-slider input:checked + label::after {
-  /* border-width: 4px; */
-  /* transform: translate(-50%, -50%) scale(0.75); */
-}
+/* form #donate__amount-slider input:checked + label::after {
+
+} */
 
 form #donate__amount-slider input:checked ~ #donate__amount-pos {
   opacity: 1;
@@ -372,7 +373,18 @@ form:valid #donate__amount-slider input:checked + label::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 98px;
+  margin-top: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
 .donate__input {
@@ -383,6 +395,7 @@ form:valid #donate__amount-slider input:checked + label::before {
   background: url('../assets/icons/dollar.svg') no-repeat calc(100% - 10px) center;
   padding: 16px 9px;
   margin-bottom: 25px;
+  font-size: 1rem;
 }
 
 .donate__input:focus {
@@ -433,6 +446,9 @@ form:valid #donate__amount-slider input:checked + label::before {
 	align-items: center;
   transition: 0.3s;
   margin: 0 auto;
+  font-size: 1rem;
+  position: relative;;
+  left: 0.5%;
 }
 
 .donate__button:hover {
@@ -449,5 +465,227 @@ form:valid #donate__amount-slider input:checked + label::before {
 
 .donate__p2 {
   color: #333B41;
-  margin-bottom: 60px;
+  margin: 33px 0 0 0;
+  padding-left: 5px;
+}
+
+/* Footer */
+
+footer {
+  background: #111115;
+  height: 443px;
+  z-index: -10;
+}
+.footer__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 40px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .footer__column {
+  flex: 0 1 33.333%;
+} */
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 66px;
+  top: -1%;
+}
+
+.footer__button {
+  width: 298px;
+  height: 54px;
+  background-color: #F9804B;
+  background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  transition: 0.4s;
+}
+
+.footer__button:hover {
+  transform: scale(1.05);
+  background: #E47209;
+  transition: all 0.4s ease;
+}
+
+.footer__button:active {
+  transform: scale(1);
+  background: #4B9200;
+  transition: all 0.4s ease;
+}
+
+.footer__social {
+  margin-top: 46px;
+}
+
+.footer__social_wrapper {
+  display: flex;
+}
+
+.footer__social_item {
+  margin-bottom: 10px;
+  transition: 0.4s;
+}
+
+.footer__social_item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__social_item:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.footer__social_logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.facebook {
+  background: url('../assets/icons/facebook_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.twitter {
+  background: url('../assets/icons/twitter_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.instagram {
+  background: url('../assets/icons/instagram_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.youtube {
+  background: url('../assets/icons/youtube_ico.svg') no-repeat center center;
+  background-color: rgba(196, 196, 196, 0.5);
+  transition: all 0.4s ease;
+}
+
+.footer__social_name {
+  color: #FFFFFF;
+  padding-left: 12px;
+  line-height: 26px;
+  transition: all 0.4s ease;
+}
+
+.footer__social_item:active .footer__social_name {
+  color: #4B9200;
+  transition: all 0.4s ease;
+}
+
+.footer__social_item:active .facebook,
+.footer__social_item:active .twitter,
+.footer__social_item:active .instagram,
+.footer__social_item:active .youtube {
+  background-color: #4B9200;
+  transition: all 0.4s ease;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__list {
+  padding-bottom: 5px;
+}
+
+.footer__item {
+  margin-left: 62px;
+}
+
+.footer__column_third {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column h3 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+.footer__container {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 auto;
+}
+
+.footer__input {
+  display: block;
+  width: 228px;
+  height: 42px;
+  border: 1px solid transparent;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  box-shadow: inset 0px 0px 0px 100vw #111115;
+  border-radius: 5px;
+  transition: ease-in-out .5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 1;
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.footer__input::placeholder {
+
+  color: #BDBDBD;
+}
+
+.footer__submit {
+  width: 129px;
+  height: 42px;
+  /* line-height: 42px; */
+  color: #333B41;
+  background: #F1F3F2;
+  border: 1px solid #333B41;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.footer__submit:active {
+  transform: scale(1.05);
+  transition: 0.4s;
+  color: #4B9200;
+  border: 1px solid #4B9200;
+}
+
+.footer__input:invalid ~ .footer__submit {
+  color: #d31414;
+  border-color: #d31414;
+}
+
+.footer__info {
+  font-weight: 100;
+  color: #FFFFFF50;
+  padding-bottom: 5px;
+}
+
+.footer__design {
+  margin-bottom: 10px;
+  text-align: end;
+  padding: 0 5px 5px 0;
+}
+
+.footer__right {
+  text-align: end;
 }
