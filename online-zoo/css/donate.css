@@ -237,5 +237,164 @@ header {
 .donate__diet_amount-text {
   line-height: 140%;
   color: #000000;
-  margin-bottom: 10px;
 }
+
+#form-wrapper {
+  padding-top: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+form {
+  width: calc(100% + 60px);
+  margin: 0 -30px;
+}
+
+form #debt-amount-slider {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 27px;
+  user-select: none;
+  background: #404950;
+  border-radius: 2px;
+}
+
+form #debt-amount-slider::before {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  width: calc(100% * (8 / 9));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #72828E;
+}
+
+form #debt-amount-slider input, form #debt-amount-slider label {
+  box-sizing: border-box;
+  flex: 1;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  top: -25%;
+}
+
+form #debt-amount-slider label {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  user-select: none;
+}
+
+form #debt-amount-slider label::before {
+  content: attr(data-debt-amount);
+  position: absolute;
+  left: 50%;
+  /* padding-top: 10px; */
+  transform: translate(-50%, 45px);
+  font-size: 26px;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+
+form #debt-amount-slider label::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: #FFEE2E;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+form #debt-amount-slider label:hover::after {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+form #debt-amount-slider input {
+  display: none;
+}
+
+form #debt-amount-slider input:checked + label::before {
+  color: #FE9013;
+}
+
+form #debt-amount-slider input:checked + label::after {
+  /* border-width: 4px; */
+  /* transform: translate(-50%, -50%) scale(0.75); */
+}
+
+form #debt-amount-slider input:checked ~ #debt-amount-pos {
+  opacity: 1;
+}
+
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 6.25%;
+}
+
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 18.75%;
+}
+
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 31.25%;
+}
+
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.75%;
+}
+
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.25%;
+}
+
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 68.75%;
+}
+
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 81.25%;
+}
+
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 93.75%;
+}
+
+form #debt-amount-slider #debt-amount-pos {
+  display: block;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background: url('../assets/icons/roller_icon.svg');
+}
+
+form:valid #debt-amount-slider input + label::before {
+  transition: all 0.15s linear;
+}
+
+form:valid #debt-amount-slider input:checked + label::before {
+  transition: all 0.15s linear;
+}
+
