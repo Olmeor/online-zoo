@@ -69,33 +69,43 @@
 
 
       <div id="form-wrapper">
-        <form action="/p/quote.php" method="GET">
-          <div id="debt-amount-slider">
-            <input type="radio" name="debt-amount" id="1" value="1" required>
-            <label for="1" data-debt-amount="$5000"></label>
-            <input type="radio" name="debt-amount" id="2" value="2" required>
-            <label for="2" data-debt-amount="$2000"></label>
-            <input checked type="radio" name="debt-amount" id="3" value="3" required>
-            <label for="3" data-debt-amount="$1000"></label>
-            <input type="radio" name="debt-amount" id="4" value="4" required>
-            <label for="4" data-debt-amount="$500"></label>
-            <input type="radio" name="debt-amount" id="5" value="5" required>
-            <label for="5" data-debt-amount="$250"></label>
-            <input type="radio" name="debt-amount" id="6" value="6" required>
-            <label for="6" data-debt-amount="$100"></label>
-            <input type="radio" name="debt-amount" id="7" value="7" required>
-            <label for="7" data-debt-amount="$50"></label>
-            <input type="radio" name="debt-amount" id="8" value="8" required>
-            <label for="8" data-debt-amount="$25"></label>
-            <div id="debt-amount-pos"></div>
+        <form>
+          <div id="donate__amount-slider">
+            <input type="radio" name="donate__amount" id="1" value="1" required>
+            <label for="1" data-donate__amount="$5000"></label>
+            <input type="radio" name="donate__amount" id="2" value="2" required>
+            <label for="2" data-donate__amount="$2000"></label>
+            <input checked type="radio" name="donate__amount" id="3" value="3" required>
+            <label for="3" data-donate__amount="$1000"></label>
+            <input type="radio" name="donate__amount" id="4" value="4" required>
+            <label for="4" data-donate__amount="$500"></label>
+            <input type="radio" name="donate__amount" id="5" value="5" required>
+            <label for="5" data-donate__amount="$250"></label>
+            <input type="radio" name="donate__amount" id="6" value="6" required>
+            <label for="6" data-donate__amount="$100"></label>
+            <input type="radio" name="donate__amount" id="7" value="7" required>
+            <label for="7" data-donate__amount="$50"></label>
+            <input type="radio" name="donate__amount" id="8" value="8" required>
+            <label for="8" data-donate__amount="$25"></label>
+            <div id="donate__amount-pos"></div>
           </div>
         </form>
       </div>
-
-    </div>
-      <a href="./donate.html">
-        <div class="donate__button">Feed a friend now</div>
-      </a>
+      <form class="donate__form">
+        <input class="donate__input" type="number" onkeydown="event.target.value.length>3 && event.preventDefault()" max="9999" placeholder="Another amount">
+        <div class="donate__radio-wrapper">
+          <div>
+            <input type="radio" id="pay-monthly" name="donate__period" value="monthly">
+            <label for="pay-monthly">Monthly</label>
+          </div>
+          <div>
+            <input type="radio" id="pay-once" name="donate__period" value="once" checked="checked">
+            <label for="pay-once">Once</label>
+          </div>
+        </div>
+        <button class="donate__button">Feed a friend now</button>
+        <p class="donate__p2">Share with your friends on social networks</p>
+      </form>
     </div>
   </div>
 
