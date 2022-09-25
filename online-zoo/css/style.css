@@ -906,6 +906,16 @@ footer {
   color: #BDBDBD;
 }
 
+.footer__input:focus {
+  color: #4b9200;
+  border-color: #4b9200
+}
+
+.footer__input:invalid {
+  color: #d31414;
+  border-color: #d31414
+}
+
 .footer__submit {
   width: 129px;
   height: 42px;

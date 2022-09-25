@@ -402,6 +402,13 @@ input[type=number] {
   outline: none;
   border-color: #4B9200;
   color: #4B9200;
+  background: url('../assets/icons/dollar_green.svg') no-repeat calc(100% - 10px) center;
+}
+
+.donate__input:invalid {
+  color: #d31414;
+  border-color: #d31414;
+  background: url('../assets/icons/dollar_red.svg') no-repeat calc(100% - 10px) center;
 }
 
 .donate__radio-wrapper {
@@ -649,6 +656,16 @@ footer {
 .footer__input::placeholder {
 
   color: #BDBDBD;
+}
+
+.footer__input:focus {
+  color: #4b9200;
+  border-color: #4b9200
+}
+
+.footer__input:invalid {
+  color: #d31414;
+  border-color: #d31414
 }
 
 .footer__submit {
