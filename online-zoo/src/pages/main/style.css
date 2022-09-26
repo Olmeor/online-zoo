@@ -125,6 +125,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  user-select: none;
 }
 
 .watch__text span {
@@ -267,7 +268,8 @@ header {
   filter: brightness(0.7);
 }
 
-.pets__cards:hover .pets__title {
+.pets__cards:hover .pets__title,
+.pets__cards:hover .pets__ico {
   transform: translateY(-150%);
   transition: 0.7s;
   color: #FFFFFF;
@@ -331,6 +333,7 @@ header {
 .pets__ico {
   width: 33px;
   height: 37px;
+  transition: 0.7s;
 }
 
 .banana {

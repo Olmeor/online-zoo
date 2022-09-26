@@ -166,10 +166,11 @@ header {
 .donate__diet {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 48px;
-  gap: 15px;
-  padding-right: 10px;
+  gap: 12px;
+  /* padding-right: 10px; */
+  padding-left: 217px;
 }
 
 .donate__diet_text {
@@ -204,6 +205,7 @@ header {
   background: url('../../assets/icons/panda_widget1.svg');
   width: 284px;
   height: 246px;
+  margin-left: 3px;
 }
 
 .donate__diet_amount-text {
