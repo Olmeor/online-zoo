@@ -12,6 +12,7 @@ footer {
 
 header {
   background: #000000;
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 
@@ -262,6 +263,7 @@ header {
 
 .pets__image:hover {
   transform: scale(1.055);
+  -webkit-filter: brightness(0.7);
   filter: brightness(0.7);
 }
 
@@ -416,6 +418,7 @@ header {
   margin: 0 auto;
   color: #333B41;
   background: rgba(253, 253, 255, 0.52);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   border-radius: 20px;
   padding-bottom: 60px;
@@ -475,6 +478,7 @@ header {
   height: 168px;
   border-radius: 5px;
   border: 1px solid #FA6F32;
+  -o-border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-image-slice: 1;
   z-index: 1;
@@ -904,6 +908,26 @@ footer {
   font-size: 1rem;
   line-height: 140%;
   color: #FFFFFF;
+}
+
+.footer__input::-webkit-input-placeholder {
+
+  color: #BDBDBD;
+}
+
+.footer__input::-moz-placeholder {
+
+  color: #BDBDBD;
+}
+
+.footer__input:-ms-input-placeholder {
+
+  color: #BDBDBD;
+}
+
+.footer__input::-ms-input-placeholder {
+
+  color: #BDBDBD;
 }
 
 .footer__input::placeholder {
