@@ -33,7 +33,7 @@ header {
 }
 
 .header__title::after {
-  content: url('../assets/icons/bamboo.png');
+  content: url('../../assets/icons/bamboo.png');
   position: absolute;
   top: 24px;
   left: 10px;
@@ -97,7 +97,7 @@ header {
 
 .watch {
   height: 780px;
-  background: url('../assets/images/giant_panda.jpg') no-repeat center;
+  background: url('../../assets/images/giant_panda.jpg') no-repeat center;
   background-size: cover;
   margin-top: -80px;
   padding-top: 80px;
@@ -166,7 +166,7 @@ header {
 
 .backstage {
   padding-top: 140px;
-  background-image: url('../assets/images/flower_foto1.png');
+  background-image: url('../../assets/images/flower_foto1.png');
   background-repeat: no-repeat;
   background-position: right 10%;
   z-index: -1;
@@ -182,7 +182,7 @@ header {
 .backstage__img {
   height: 403px;
   flex: 0 1 250%;
-  background: url('../assets/images/bamboo-cap.jpg') no-repeat center;
+  background: url('../../assets/images/bamboo-cap.jpg') no-repeat center;
   background-size: cover;
   margin-bottom: 180px;
 }
@@ -214,7 +214,7 @@ header {
 /* Pets */
 
 .pets {
-  background-image: url('../assets/images/palm_foto.png'), url('../assets/images/strelitzia1.png');
+  background-image: url('../../assets/images/palm_foto.png'), url('../../assets/images/strelitzia1.png');
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, right bottom;
   z-index: -1;
@@ -278,27 +278,27 @@ header {
 }
 
 .pandas {
-  background: url('../assets/images/foto-card1-panda.jpg') no-repeat center;
+  background: url('../../assets/images/foto-card1-panda.jpg') no-repeat center;
 }
 
 .eagles {
-  background: url('../assets/images/foto-card2-eagle.jpg') no-repeat center;
+  background: url('../../assets/images/foto-card2-eagle.jpg') no-repeat center;
 }
 
 .gorillas {
-  background: url('../assets/images/foto-card3-gorilla.jpg') no-repeat center;
+  background: url('../../assets/images/foto-card3-gorilla.jpg') no-repeat center;
 }
 
 .sloth {
-  background: url('../assets/images/foto-card5-sloth.jpg') no-repeat center;
+  background: url('../../assets/images/foto-card5-sloth.jpg') no-repeat center;
 }
 
 .cheetahs {
-  background: url('../assets/images/foto-card6-cheetah.jpg') no-repeat center;
+  background: url('../../assets/images/foto-card6-cheetah.jpg') no-repeat center;
 }
 
 .penguins {
-  background: url('../assets/images/foto-card7-penguin.jpg') no-repeat center;
+  background: url('../../assets/images/foto-card7-penguin.jpg') no-repeat center;
 }
 
 .pets__title-wrapper {
@@ -332,24 +332,24 @@ header {
 }
 
 .banana {
-  background: url('../assets/icons/banana-bamboo_icon.svg') no-repeat center;
+  background: url('../../assets/icons/banana-bamboo_icon.svg') no-repeat center;
   background-size: cover;
 }
 
 .meat {
-  background: url('../assets/icons/meet-fish_icon.svg') no-repeat center;
+  background: url('../../assets/icons/meet-fish_icon.svg') no-repeat center;
   background-size: cover;
 }
 
 .pets__arrow_left {
   position: absolute;
-  background: url('../assets/icons/pets_arrow-left.svg') no-repeat center center;
+  background: url('../../assets/icons/pets_arrow-left.svg') no-repeat center center;
   left: -5.5%;
 }
 
 .pets__arrow_right {
   position: absolute;
-  background: url('../assets/icons/pets_arrow-right.svg') no-repeat center center;
+  background: url('../../assets/icons/pets_arrow-right.svg') no-repeat center center;
   right: -5.5%;
 }
 
@@ -481,17 +481,17 @@ header {
 }
 
 .feed__pay {
-  background: url('../assets/icons/pay.svg') no-repeat center center;
+  background: url('../../assets/icons/pay.svg') no-repeat center center;
   background-color: #FFFFFF;
 }
 
 .feed__zoo {
-  background: url('../assets/icons/zoo.svg') no-repeat center center;
+  background: url('../../assets/icons/zoo.svg') no-repeat center center;
   background-color: #FFFFFF;
 }
 
 .feed__monkey {
-  background: url('../assets/icons/monkey.svg') no-repeat center center;
+  background: url('../../assets/icons/monkey.svg') no-repeat center center;
   background-color: #FFFFFF;
 }
 
@@ -502,7 +502,7 @@ header {
 }
 
 .feed__arrow {
-  background: url('../assets/icons/feed-arrow.svg') no-repeat center center;
+  background: url('../../assets/icons/feed-arrow.svg') no-repeat center center;
   min-width: 70px;
   height: 158px;
 }
@@ -540,7 +540,7 @@ header {
 
 .testimonial {
   padding-top: 140px;
-  background-image: url('../assets/images/leav_foto.png');
+  background-image: url('../../assets/images/leav_foto.png');
   background-repeat: no-repeat;
   background-position: right 126%;
   z-index: -1;
@@ -602,21 +602,21 @@ header {
 }
 
 .testimonial__photo {
-  background: url('../assets/icons/user_icon.png');
+  background: url('../../assets/icons/user_icon.png');
   width: 37px;
   height: 37px;
 }
 
 .photo_1 {
-  background: url('../assets/icons/user_1.jpg');
+  background: url('../../assets/icons/user_1.jpg');
 }
 
 .photo_2 {
-  background: url('../assets/icons/user_2.jpg');
+  background: url('../../assets/icons/user_2.jpg');
 }
 
 .photo_3 {
-  background: url('../assets/icons/user_3.jpg');
+  background: url('../../assets/icons/user_3.jpg');
 }
 
 .testimonial__title {
@@ -806,25 +806,25 @@ footer {
 }
 
 .facebook {
-  background: url('../assets/icons/facebook_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/facebook_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
 
 .twitter {
-  background: url('../assets/icons/twitter_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/twitter_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
 
 .instagram {
-  background: url('../assets/icons/instagram_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/instagram_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
 
 .youtube {
-  background: url('../assets/icons/youtube_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/youtube_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
@@ -943,6 +943,12 @@ footer {
   font-weight: 100;
   color: #FFFFFF50;
   padding-bottom: 5px;
+  transition: 0.4s;
+}
+
+.footer__info:hover {
+  color: #4B9200;
+  transition: 0.4s;
 }
 
 .footer__design {

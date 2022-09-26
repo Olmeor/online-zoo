@@ -33,7 +33,7 @@ header {
 }
 
 .header__title::after {
-  content: url('../assets/icons/bamboo.png');
+  content: url('../../assets/icons/bamboo.png');
   position: absolute;
   top: 24px;
   left: 10px;
@@ -95,7 +95,7 @@ header {
 
 .donate__welcome {
   height: 386px;
-  background: url('../assets/images/panda_bg.jpg') no-repeat center;
+  background: url('../../assets/images/panda_bg.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -192,14 +192,14 @@ header {
 }
 
 .donate__diet_x {
-  background: url('../assets/icons/x_icon.svg') no-repeat left;
+  background: url('../../assets/icons/x_icon.svg') no-repeat left;
   width: 60px;
   height: 14px;
   margin-top: 25px;
 }
 
 .donate__diet_img {
-  background: url('../assets/icons/panda_widget1.svg');
+  background: url('../../assets/icons/panda_widget1.svg');
   width: 284px;
   height: 246px;
 }
@@ -358,7 +358,7 @@ form #donate__amount-slider #donate__amount-pos {
   z-index: 2;
   width: 40px;
   height: 40px;
-  background: url('../assets/icons/roller_icon.svg');
+  background: url('../../assets/icons/roller_icon.svg');
 }
 
 form:valid #donate__amount-slider input + label::before {
@@ -392,7 +392,7 @@ input[type=number] {
   height: 54px;
   border: 1px solid #929699;
   border-radius: 2px;
-  background: url('../assets/icons/dollar.svg') no-repeat calc(100% - 10px) center;
+  background: url('../../assets/icons/dollar.svg') no-repeat calc(100% - 10px) center;
   padding: 16px 9px;
   margin-bottom: 25px;
   font-size: 1rem;
@@ -402,13 +402,13 @@ input[type=number] {
   outline: none;
   border-color: #4B9200;
   color: #4B9200;
-  background: url('../assets/icons/dollar_green.svg') no-repeat calc(100% - 10px) center;
+  background: url('../../assets/icons/dollar_green.svg') no-repeat calc(100% - 10px) center;
 }
 
 .donate__input:invalid {
   color: #d31414;
   border-color: #d31414;
-  background: url('../assets/icons/dollar_red.svg') no-repeat calc(100% - 10px) center;
+  background: url('../../assets/icons/dollar_red.svg') no-repeat calc(100% - 10px) center;
 }
 
 .donate__radio-wrapper {
@@ -558,25 +558,25 @@ footer {
 }
 
 .facebook {
-  background: url('../assets/icons/facebook_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/facebook_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
 
 .twitter {
-  background: url('../assets/icons/twitter_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/twitter_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
 
 .instagram {
-  background: url('../assets/icons/instagram_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/instagram_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
 
 .youtube {
-  background: url('../assets/icons/youtube_ico.svg') no-repeat center center;
+  background: url('../../assets/icons/youtube_ico.svg') no-repeat center center;
   background-color: rgba(196, 196, 196, 0.5);
   transition: all 0.4s ease;
 }
@@ -695,6 +695,12 @@ footer {
   font-weight: 100;
   color: #FFFFFF50;
   padding-bottom: 5px;
+  transition: 0.4s;
+}
+
+.footer__info:hover {
+  color: #4B9200;
+  transition: 0.4s;
 }
 
 .footer__design {
