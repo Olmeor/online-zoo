@@ -799,6 +799,11 @@ footer {
   transition: 0.4s;
 }
 
+.footer__social_item:active {
+  transform: scale(1);
+  transition: 0.4s;
+}
+
 .footer__social_logo {
   width: 26px;
   height: 26px;

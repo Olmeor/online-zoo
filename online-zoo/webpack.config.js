@@ -16,15 +16,15 @@ const devServer = (isDev) => !isDev ? {} : {
 module.exports = ({ development }) => ({
   mode: development ? 'development' : 'production',
   devtool: development ? 'inline-source-map' : false,
-  // entry: {
-  //   main: './src/js/index.js',
-  // },
-  entry: './src/js/index.js',
+  entry: {
+    index: './src/pages/main/script.js',
+    donate: './src/pages/donate/donate.js',
+  },
   output: {
     // clean: true,
     path: path.resolve(__dirname, 'dist'),
-    // filename: '[name].[contenthash].js',
-    filename: './js/bundle.js',
+    filename: './js/[name].[contenthash].js',
+    // filename: './js/bundle.js',
     assetModuleFilename: 'assets/[hash][ext]',
   },
   module: {
@@ -57,24 +57,37 @@ module.exports = ({ development }) => ({
     ]
   },
   plugins: [
+    // new HtmlWebpackPlugin({
+    //   // title: 'Demo webpack'
+    //   template: './src/index.html',
+    //   favicon: './src/assets/favicon.ico'
+    // }),
     new HtmlWebpackPlugin({
-      // title: 'Demo webpack'
-      template: './src/index.html',
-      favicon: './src/assets/favicon.ico'
+      filename: 'index.html',
+      template: './src/pages/main/index.html',
+      favicon: "./src/pages/main/favicon.png",
+      chunks: ["index"]
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'donate.html',
+      template: './src/pages/donate/donate.html',
+      favicon: "./src/pages/main/favicon.png",
+      chunks: ["donate"]
     }),
     new MiniCssExtractPlugin({
-      filename: './css/[name].css'
+      filename: './[name].css'
+      // filename: './css/[name].css'
       // filename: '[name].[contenthash].css'
     }),
-    new CopyPlugin({
-      patterns: [
-        // {from: './public',}
-        // { from: './public', to 'dir' },
-        // noErrorOnMissing: true,
-        { from: './src/assets/quotes/*.json', to: './assets/quotes/[name][ext]' },
-        // { from: './src/assets/sounds/*.mp3', to: './assets/sounds/[name][ext]' },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     // {from: './public',}
+    //     // { from: './public', to 'dir' },
+    //     // noErrorOnMissing: true,
+    //     // { from: './src/assets/quotes/*.json', to: './assets/quotes/[name][ext]' },
+    //     // { from: './src/assets/sounds/*.mp3', to: './assets/sounds/[name][ext]' },
+    //   ],
+    // }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
   ],
   resolve: {
