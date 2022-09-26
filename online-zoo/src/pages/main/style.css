@@ -308,9 +308,12 @@ header {
 .pets__title-wrapper {
   padding: 8px 10px 12px 15px;
   color: #000000;
+  transition: 0.7s;
+}
+
+.pets__title-shadow {
   display: flex;
   justify-content: space-between;
-  transition: 0.7s;
 }
 
 .pets__title {
