@@ -2,11 +2,25 @@
 
 @media screen and (max-width: 1280px) {
 
+  .pets__wrapper {
+    width: 970px;
+    margin-bottom: 0;
+  }
 
+  .pets__border {
+    margin-bottom: 90px;
+  }
 
+  .pets__arrow_left {
+    left: 35%;
+  }
 
+  .pets__arrow_right {
+    right: 35%;
+  }
 
-
-
+  .pets__arrow {
+    top: calc(50% - 75px);
+  }
 
 }

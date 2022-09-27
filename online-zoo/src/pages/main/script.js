@@ -1,6 +1,7 @@
 import '../../assets/styles/fonts.css'
 import '../../assets/styles/normalize.css'
 import './main_header.css'
+import './main_watch.css'
 import './main_backstage.css'
 import './main_pets.css'
 import './main_feed.css'
