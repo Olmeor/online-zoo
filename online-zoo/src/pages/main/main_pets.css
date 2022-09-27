@@ -1,0 +1,196 @@
+.pets {
+  background-image: url('../../assets/images/palm_foto.jpg'), url('../../assets/images/strelitzia1.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+	align-content: center;
+  padding-bottom: 100px;
+}
+
+.pets__wrapper {
+  width: 1190px;
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+  margin: 0 -15px 60px -15px;
+  position: relative;
+}
+
+.pets__cards {
+  flex: 0 1 33.333%;
+  padding: 0 15px;
+}
+
+.pets__border {
+  border-radius: 5px;
+  border: 1px solid #FA6F32;
+  border-image-slice: 1;
+  margin-bottom: 20px;
+}
+
+.pets__frame {
+  overflow: hidden;
+}
+
+.pets__image {
+  position: relative;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  transition: 0.7s;
+}
+
+.pets__image:hover {
+  transform: scale(1.055);
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+}
+
+.pets__cards:hover .pets__title,
+.pets__cards:hover .pets__ico {
+  transform: translateY(-150%);
+  transition: 0.7s;
+  color: #FFFFFF;
+}
+
+.pets__cards:hover .pets__title-wrapper {
+  background: #00000050;
+  transition: 0.7s;
+  z-index: 10;
+}
+
+.pandas {
+  background: url('../../assets/images/foto-card1-panda.jpg') no-repeat center;
+}
+
+.eagles {
+  background: url('../../assets/images/foto-card2-eagle.jpg') no-repeat center;
+}
+
+.gorillas {
+  background: url('../../assets/images/foto-card3-gorilla.jpg') no-repeat center;
+}
+
+.sloth {
+  background: url('../../assets/images/foto-card5-sloth.jpg') no-repeat center;
+}
+
+.cheetahs {
+  background: url('../../assets/images/foto-card6-cheetah.jpg') no-repeat center;
+}
+
+.penguins {
+  background: url('../../assets/images/foto-card7-penguin.jpg') no-repeat center;
+}
+
+.pets__title-wrapper {
+  padding: 8px 10px 12px 15px;
+  color: #000000;
+  transition: 0.7s;
+}
+
+.pets__title-shadow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pets__title {
+  transition: 0.7s;
+}
+
+.pets__name {
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: -1px;
+}
+
+.pets__place {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.pets__ico {
+  width: 33px;
+  height: 37px;
+  transition: 0.7s;
+}
+
+.banana {
+  background: url('../../assets/icons/banana-bamboo_icon.svg') no-repeat center;
+  background-size: cover;
+}
+
+.meat {
+  background: url('../../assets/icons/meet-fish_icon.svg') no-repeat center;
+  background-size: cover;
+}
+
+.pets__arrow_left {
+  position: absolute;
+  background: url('../../assets/icons/pets_arrow-left.svg') no-repeat center center;
+  left: -5.5%;
+}
+
+.pets__arrow_right {
+  position: absolute;
+  background: url('../../assets/icons/pets_arrow-right.svg') no-repeat center center;
+  right: -5.5%;
+}
+
+.pets__arrow {
+  background-color: #F9804B;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: calc(50% - 42px);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.pets__arrow:hover {
+  transform: scale(1.10);
+  background-color: #E47209;
+  transition: all 0.4s ease;
+}
+
+.pets__arrow:active {
+  transform: scale(1);
+  background-color: #4B9200;
+  transition: all 0.4s ease;
+}
+
+.pets__button {
+  width: 298px;
+  height: 54px;
+  background-color: #F9804B;
+  background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 25px;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.pets__button:hover {
+  transform: scale(1.05);
+  background: #E47209;
+  transition: all 0.4s ease;
+}
+
+.pets__button:active {
+  transform: scale(1);
+  background: #4B9200;
+  transition: all 0.4s ease;
+}
