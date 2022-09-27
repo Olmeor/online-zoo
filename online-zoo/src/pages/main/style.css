@@ -168,7 +168,7 @@ header {
 
 .backstage {
   padding-top: 140px;
-  background-image: url('../../assets/images/flower_foto1.png');
+  background-image: url('../../assets/images/flower_foto1.jpg');
   background-repeat: no-repeat;
   background-position: right 10%;
   z-index: -1;
@@ -216,7 +216,7 @@ header {
 /* Pets */
 
 .pets {
-  background-image: url('../../assets/images/palm_foto.png'), url('../../assets/images/strelitzia1.png');
+  background-image: url('../../assets/images/palm_foto.jpg'), url('../../assets/images/strelitzia1.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, right bottom;
   z-index: -1;
@@ -373,6 +373,7 @@ header {
 
 .pets__arrow:hover {
   transform: scale(1.10);
+  background-color: #E47209;
   transition: all 0.4s ease;
 }
 
@@ -550,7 +551,7 @@ header {
 
 .testimonial {
   padding-top: 140px;
-  background-image: url('../../assets/images/leav_foto.png');
+  background-image: url('../../assets/images/leav_foto.jpg');
   background-repeat: no-repeat;
   background-position: right 126%;
   z-index: -1;
