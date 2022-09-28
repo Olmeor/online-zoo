@@ -260,8 +260,11 @@ footer {
 
   .footer__wrapper {
     width: 940px;
-    margin: 0 30px
   }
+
+}
+
+@media screen and (max-width: 1280px) {
 
   .footer__nav {
     padding-left: 0;
