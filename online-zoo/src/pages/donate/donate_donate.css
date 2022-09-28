@@ -64,17 +64,16 @@
   font-size: 1.5rem;
   line-height: 120%;
   margin-bottom: 60px;
-  /* padding-left: 100px; */
 }
 
 .donate__diet {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   margin-bottom: 48px;
   gap: 12px;
-  /* padding-right: 10px; */
-  padding-left: 217px;
+  padding-right: 10px;
+  /* padding-left: 217px; */
 }
 
 .donate__diet_text {
@@ -143,7 +142,7 @@ form #donate__amount-slider {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: #404950;
+  background-color: #404950;
   border-radius: 2px;
 }
 
@@ -187,7 +186,7 @@ form #donate__amount-slider label::before {
   content: attr(data-donate__amount);
   position: absolute;
   left: 50%;
-  /* padding-top: 10px; */
+
   top: 12%;
   transform: translate(-50%, 45px);
   font-size: 26px;

@@ -125,7 +125,7 @@ footer {
   transition: all 0.4s ease;
 }
 
-.footer__nav {
+.footer__column_second {
   display: flex;
   align-items: flex-end;
 }
@@ -215,7 +215,6 @@ footer {
 .footer__submit {
   width: 129px;
   height: 42px;
-  /* line-height: 42px; */
   color: #333B41;
   background: #F1F3F2;
   border: 1px solid #333B41;
@@ -261,6 +260,12 @@ footer {
 
   .footer__wrapper {
     width: 940px;
+    margin-left: 44px;
+  }
+
+  .footer__nav {
+    padding-left: 0;
+    margin: 0 -50px 0 -10px;
   }
 
   .footer__item {
@@ -271,13 +276,14 @@ footer {
     margin-left: 0px;
   }
 
-  .footer__container {
+  .footer__container,
+  .footer__column h3 {
     position: relative;
-    left: -15%;
+    left: -9%;
   }
 
   .footer__info {
     position: relative;
-    left: -7%;
   }
+
 }
