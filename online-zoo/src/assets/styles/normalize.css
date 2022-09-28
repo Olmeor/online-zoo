@@ -63,3 +63,7 @@ main,
 footer {
   margin: 0 auto;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}

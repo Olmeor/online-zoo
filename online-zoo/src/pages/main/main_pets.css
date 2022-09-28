@@ -25,6 +25,10 @@
   padding: 0 15px;
 }
 
+#item-4 {
+  display: none;
+}
+
 .pets__border {
   border-radius: 5px;
   border: 1px solid #FA6F32;
@@ -74,6 +78,10 @@
 
 .gorillas {
   background: url('../../assets/images/foto-card3-gorilla.jpg') no-repeat center;
+}
+
+.alligator {
+  background: url('../../assets/images/foto-card4-alligator.jpg') no-repeat center;
 }
 
 .sloth {
@@ -193,4 +201,68 @@
   transform: scale(1);
   background: #4B9200;
   transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 1280px) {
+
+  .pets {
+    background-image: url('../../assets/images/palm_foto_2.jpg'), url('../../assets/images/strelitzia1_2.jpg');
+    padding-bottom: 140px;
+  }
+
+  .pets__wrapper {
+    width: 970px;
+    margin-bottom: -12px;
+  }
+
+  .pets__border {
+    margin-bottom: 94px;
+  }
+
+  .pets__image {
+    background-size: cover;
+  }
+
+  .pets__arrow_left {
+    left: 35%;
+  }
+
+  .pets__arrow_right {
+    right: 34.7%;
+  }
+
+  .pets__arrow {
+    top: calc(50% - 77px);
+  }
+
+  #item-1 {
+    order: 1;
+  }
+
+  #item-2 {
+    order: 2;
+  }
+
+  #item-3 {
+    order: 4;
+  }
+  #item-4 {
+    display: block;
+    order: 5;
+  }
+
+  #item-5 {
+    display: none;
+  }
+
+  #item-6 {
+    order: 3;
+  }
+
+  #item-7 {
+    order: 6;
+  }
+
+
+
 }

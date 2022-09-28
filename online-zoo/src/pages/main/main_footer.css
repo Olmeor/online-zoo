@@ -256,3 +256,28 @@ footer {
 .footer__right {
   text-align: end;
 }
+
+@media screen and (max-width: 1280px) {
+
+  .footer__wrapper {
+    width: 940px;
+  }
+
+  .footer__item {
+    margin-left: 48px;
+  }
+
+  .footer__item:first-child {
+    margin-left: 0px;
+  }
+
+  .footer__container {
+    position: relative;
+    left: -15%;
+  }
+
+  .footer__info {
+    position: relative;
+    left: -7%;
+  }
+}

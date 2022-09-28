@@ -93,6 +93,9 @@ header {
     width: 940px;
   }
 
+  .header__nav {
+    padding-left: 11px;
+  }
   .header__item {
     margin-left: 48px;
   }
