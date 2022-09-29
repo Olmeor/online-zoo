@@ -53,47 +53,21 @@
     padding-left: 0;
   }
 
-  form #donate__amount-slider::before {
-    width: calc(100% * (7 / 8) - 10px);
-  }
-
-  form #donate__amount-slider label:first-of-type {
-    display: none;
-  }
-
-  form #donate__amount-slider input:checked:nth-child(3) ~ #donate__amount-pos {
-    left: 7.143%;
-  }
-
-  form #donate__amount-slider input:checked:nth-child(5) ~ #donate__amount-pos {
-    left: 21.429%;
-  }
-
-  form #donate__amount-slider input:checked:nth-child(7) ~ #donate__amount-pos {
-    left: 35.714%;
-  }
-
-  form #donate__amount-slider input:checked:nth-child(9) ~ #donate__amount-pos {
-    left: 50%;
-  }
-
-  form #donate__amount-slider input:checked:nth-child(11) ~ #donate__amount-pos {
-    left: 64.286%;
-  }
-
-  form #donate__amount-slider input:checked:nth-child(13) ~ #donate__amount-pos {
-    left: 78.571%;
-  }
-
-  form #donate__amount-slider input:checked:nth-child(15) ~ #donate__amount-pos {
-    left: 92.857%
-  }
-
-  form #donate__amount-slider label::before {
-    left: 55%;
-  }
-
   .donate__radio-wrapper {
     margin-right: 16px;
   }
+
+  .donate__label:first-of-type {
+    display: none;
+  }
+
+  .donate__amount-slider {
+    width: 105%;
+    left: -2.5%;
+  }
+
+  .donate__amount-slider span {
+    padding-left: 30px;
+  }
+
 }
