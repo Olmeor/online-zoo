@@ -92,3 +92,35 @@
     margin: 42px 0 0 102px;
   }
 }
+
+@media screen and (max-width: 999px) {
+
+  .watch {
+    height: 370px;
+    margin-top: -30px;
+    padding-top: 30px;
+  }
+
+  .watch__ellipse {
+    width: 237.6px;
+    height: 237.6px;
+    left: 52%;
+    top: 10px;
+  }
+
+  .watch__inner {
+    left: 38.3%;
+    top: -190px;
+  }
+
+  .watch__text {
+    font-size: 3.393rem;
+  }
+
+  .watch__button {
+    margin: 0;
+    position: relative;
+    top: -5px;
+    right: 35%;
+  }
+}

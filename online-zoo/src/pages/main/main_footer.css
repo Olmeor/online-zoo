@@ -260,7 +260,7 @@ footer {
 
   .footer__wrapper {
     width: 940px;
-    margin-left: 44px;
+    /* margin-left: 44px; */
   }
 
   .footer__nav {

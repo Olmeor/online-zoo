@@ -228,6 +228,7 @@
   .testimonial__input {
     max-width: 390px;
     margin-bottom: 52px;
+    left: -5px;
   }
 
   .testimonial__text {
