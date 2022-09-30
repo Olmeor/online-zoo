@@ -42,7 +42,7 @@
 
 .pets__image {
   /* position: relative; */
-  /* background-size: contain; */
+  /* background-size: cover; */
   /* width: 100%; */
   /* height: 0; */
   padding-bottom: 100%;
@@ -71,30 +71,37 @@
 
 .pandas {
   background: url('../../assets/images/foto-card1-panda.jpg') no-repeat center;
+  background-size: contain;
 }
 
 .eagles {
   background: url('../../assets/images/foto-card2-eagle.jpg') no-repeat center;
+  background-size: contain;
 }
 
 .gorillas {
   background: url('../../assets/images/foto-card3-gorilla.jpg') no-repeat center;
+  background-size: contain;
 }
 
 .alligator {
   background: url('../../assets/images/foto-card4-alligator.jpg') no-repeat center;
+  background-size: contain;
 }
 
 .sloth {
   background: url('../../assets/images/foto-card5-sloth.jpg') no-repeat center;
+  background-size: contain;
 }
 
 .cheetahs {
   background: url('../../assets/images/foto-card6-cheetah.jpg') no-repeat center;
+  background-size: contain;
 }
 
 .penguins {
   background: url('../../assets/images/foto-card7-penguin.jpg') no-repeat center;
+  background-size: contain;
 }
 
 .pets__title-wrapper {
@@ -123,6 +130,10 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
+}
+
+.pets__place_alig_2 {
+  display: none;
 }
 
 .pets__ico {
@@ -301,6 +312,14 @@
 
   .pets__place {
     font-size: 0.731rem;
+  }
+
+  .pets__place_alig_1 {
+    display: none;
+  }
+
+  .pets__place_alig_2 {
+    display: block;
   }
 
   .banana {
