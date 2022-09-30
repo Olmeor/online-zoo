@@ -157,7 +157,7 @@
 
 .donate__label {
   position: relative;
-  width: 70px;
+  width: 65px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -198,8 +198,49 @@
   background: url('../../assets/icons/roller_icon.svg');
 }
 
+.donate__label span {
+  display: block;
+  position: relative;
+}
+
+.donate__label:nth-child(2) span {
+  left: 1px;
+}
+
+.donate__label:nth-child(4) span {
+  left: 1px;
+}
+
+.donate__label:nth-child(6) span {
+  left: 1px;
+}
+
+.donate__label:nth-child(8) span {
+  left: -6px;
+}
+
+.donate__label:nth-child(10) span {
+  left: -6px;
+}
+
+.donate__label:nth-child(12) span {
+  left: -7px;
+}
+
+.donate__label:nth-child(14) span {
+  left: -14px;
+}
+
+.donate__label:nth-child(16) span {
+  left: -14px;
+}
+
 .donate__amount-slider input[type="radio"]:checked + .donate__label::after {
   opacity: 1;
+}
+
+.donate__amount-slider input[type="radio"]:checked + .donate__label span {
+  color: #FE9013;
 }
 
 .donate__amount-slider
@@ -300,13 +341,13 @@ input[type=number] {
 }
 
 .donate__button:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   background: #E47209;
   transition: all 0.4s ease;
 }
 
 .donate__button:active {
-  transform: scale(1);
+  /* transform: scale(1); */
   background: #4B9200;
   transition: all 0.4s ease;
 }

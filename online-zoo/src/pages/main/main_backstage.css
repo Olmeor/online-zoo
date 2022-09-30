@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 1440px) {
   .backstage {
-    /* background-image: none; */
+    background-image: none;
   }
 }
 
@@ -82,7 +82,7 @@
 
   .backstage {
     background-image: url('../../assets/images/flower_foto2.jpg');
-    background-position: right -6%;
+    background-position: right -20%;
     padding-top: 69px;
     padding-bottom: 77px;
   }

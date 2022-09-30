@@ -55,13 +55,13 @@
 }
 
 .watch__button:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   background: #E47209;
   transition: all 0.4s ease;
 }
 
 .watch__button:active {
-  transform: scale(1);
+  /* transform: scale(1); */
   background: #4B9200;
   transition: all 0.4s ease;
 }
@@ -104,7 +104,7 @@
   .watch__ellipse {
     width: 237.6px;
     height: 237.6px;
-    left: 52%;
+    left: 51.7%;
     top: 10px;
   }
 

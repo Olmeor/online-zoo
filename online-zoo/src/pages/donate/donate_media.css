@@ -3,7 +3,7 @@
   .donate__welcome {
     height: 390px;
     margin-right: -254px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .donate__container {
@@ -57,17 +57,50 @@
     margin-right: 16px;
   }
 
-  .donate__label:first-of-type {
+  .donate__label:nth-child(2) {
     display: none;
   }
 
+  .donate__label:nth-child(2) span {
+    left: 1px;
+  }
+
+  .donate__label:nth-child(4) span {
+    left: 7px;
+  }
+
+  .donate__label:nth-child(6) span {
+    left: 6px;
+  }
+
+  .donate__label:nth-child(8) span {
+    left: 0px;
+  }
+
+  .donate__label:nth-child(10) span {
+    left: 0px;
+  }
+
+  .donate__label:nth-child(12) span {
+    left: 0px;
+  }
+
+  .donate__label:nth-child(14) span {
+    left: -8px;
+  }
+
+  .donate__label:nth-child(16) span {
+    left: -8px;
+  }
+
   .donate__amount-slider {
-    width: 105%;
-    left: -2.5%;
+    width: 104%;
+    left: -2%;
   }
 
   .donate__amount-slider span {
-    padding-left: 30px;
+    padding-left: 25px;
   }
+
 
 }

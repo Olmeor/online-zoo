@@ -181,13 +181,13 @@
 }
 
 .pets__arrow:hover {
-  transform: scale(1.10);
+  /* transform: scale(1.10); */
   background-color: #E47209;
   transition: all 0.4s ease;
 }
 
 .pets__arrow:active {
-  transform: scale(1);
+  /* transform: scale(1); */
   background-color: #4B9200;
   transition: all 0.4s ease;
 }
@@ -210,13 +210,13 @@
 }
 
 .pets__button:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   background: #E47209;
   transition: all 0.4s ease;
 }
 
 .pets__button:active {
-  transform: scale(1);
+  /* transform: scale(1); */
   background: #4B9200;
   transition: all 0.4s ease;
 }
@@ -232,15 +232,15 @@
   }
 
   .pets__arrow_left {
-    left: 35%;
+    left: 34.9%;
   }
 
   .pets__arrow_right {
-    right: 34.7%;
+    right: 34.8%;
   }
 
   .pets__arrow {
-    top: calc(50% - 77px);
+    top: calc(50% - 78px);
   }
 }
 
