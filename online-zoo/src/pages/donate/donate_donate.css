@@ -1,7 +1,6 @@
 .donate__welcome {
   height: 386px;
-  background: url('../../assets/images/panda_bg.jpg') no-repeat center;
-  background-size: cover;
+  background: url('../../assets/images/panda_bg.jpg') no-repeat center/cover;
 }
 
 .donate {
@@ -16,11 +15,12 @@
 }
 
 .donate__title {
-  line-height: 130%;
+  line-height: 128%;
   font-size: 2.25rem;
   color: #FFFFFF;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   text-align: center;
+  margin-left: -2px;
 }
 
 .donate__text {
@@ -28,7 +28,7 @@
   line-height: 140%;
   color: #FFFFFF;
   margin-bottom: 45px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.18px;
 }
 
 .donate__hover {
@@ -46,7 +46,7 @@
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  padding: 38px 92px 65px 92px;
+  padding: 40px 92px 65px 92px;
   display: flex;
   flex-direction: column
 }
@@ -57,7 +57,7 @@
   text-align: center;
   color: #FE9013;
   margin-bottom: 22px;
-  margin-left: -7px;
+  margin-left: -11px;
 }
 
 .donate__p1 {
@@ -72,8 +72,7 @@
   justify-content: center;
   margin-bottom: 48px;
   gap: 12px;
-  padding-right: 10px;
-  /* padding-left: 217px; */
+  margin-left: -14px;
 }
 
 .donate__diet_text {
@@ -294,7 +293,7 @@ input[type=number] {
 .donate__radio-wrapper {
   display: flex;
   gap: 50px;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   margin-right: 13px;
   line-height: 140%;
 }
@@ -336,7 +335,7 @@ input[type=number] {
   transition: 0.3s;
   margin: 0 auto;
   font-size: 1rem;
-  position: relative;;
+  position: relative;
   left: 0.5%;
 }
 

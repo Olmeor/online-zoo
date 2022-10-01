@@ -20,7 +20,9 @@ footer {
   border-radius: 2px;
   position: relative;
   transition: 0.3s;
-  margin-top: -2px;
+  width: 82px;
+  height: 52px;
+  text-align: center;
   display: inline-block;
   margin-bottom: 68px;
 }
@@ -42,7 +44,6 @@ footer {
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.2;
-  margin: 3.55px 4.75px;
   color: #FFFFFF;
 }
 
@@ -381,6 +382,13 @@ footer {
 
   .footer__column_third {
     position: relative;
-    top: -52px;
   }
+
+  .footer__info {
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+  }
+
+
 }
