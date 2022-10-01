@@ -115,5 +115,24 @@
     margin-bottom: 20px;
   }
 
+}
+
+@media screen and (max-width: 639px) {
+
+  .backstage {
+    background-image: url('../../assets/images/flower_foto3.jpg');
+    background-position: right -20%;
+    padding-top: 70px;
+    padding-bottom: 77px;
+  }
+
+
+
+
+
+
+
+
+
 
 }

@@ -83,6 +83,20 @@ header {
   background-clip: text;
 }
 
+.header__burger_open {
+  display: none;
+  background: url('../../assets/icons/burger_menu_open.svg') no-repeat center;
+  width: 18px;
+  height: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.header__burger_open:hover {
+  background: url('../../assets/icons/burger_menu_open_hover.svg') no-repeat center;
+  transition: all 0.4s ease;
+}
+
 @media screen and (max-width: 1280px) {
 
   header {
@@ -140,5 +154,17 @@ header {
 
   .header__list {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .header__nav,
+  .header__designed {
+    display: none;
+  }
+
+  .header__burger_open {
+    display: block;
   }
 }
