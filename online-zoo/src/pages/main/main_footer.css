@@ -15,10 +15,35 @@ footer {
   flex: 0 1 33.333%;
 } */
 
-.footer__logo {
+.footer__title {
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  position: relative;
+  transition: 0.3s;
   margin-top: -2px;
   display: inline-block;
   margin-bottom: 68px;
+}
+
+.footer__title::after {
+  content: url('../../assets/icons/bamboo.png');
+  position: absolute;
+  top: 24px;
+  left: 10px;
+}
+
+.footer__title:hover,
+.footer__title:focus {
+  /* transform: scale(1.1); */
+  transition: 0.3s;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 3.55px 4.75px;
+  color: #FFFFFF;
 }
 
 .footer__button {
@@ -301,4 +326,61 @@ footer {
     position: relative;
   }
 
+}
+
+@media screen and (max-width: 999px) {
+
+  footer {
+    height: 282px;
+  }
+
+  .footer__wrapper {
+    width: 640px;
+    padding: 12px 20px;
+    flex-direction: column;
+  }
+
+  .footer__title {
+    margin-bottom: 32px;
+  }
+
+  .footer__column {
+    width: 100%;
+  }
+
+  .footer__column_first {
+    position: relative;
+  }
+
+  .footer__social {
+    position: absolute;
+    top: -20%;
+    right: 0;
+  }
+
+  .footer__social_item {
+    margin-bottom: 21px;
+  }
+  .footer__social_name,
+  .footer__column_third h3,
+  .footer__container {
+    display: none;
+  }
+
+  .footer__button {
+    margin-bottom: 100px;
+  }
+
+  .footer__nav {
+    margin: 0;
+  }
+
+  .footer__item {
+    margin-left: 37px;
+  }
+
+  .footer__column_third {
+    position: relative;
+    top: -52px;
+  }
 }

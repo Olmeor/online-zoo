@@ -19,6 +19,9 @@ header {
   border-radius: 2px;
   position: relative;
   transition: 0.3s;
+  width: 82px;
+  height: 52px;
+  text-align: center;
 }
 
 .header__title::after {
@@ -114,27 +117,25 @@ header {
   .header__title {
     border: none;
     position: relative;
-    left: -5px;
-    top: 1px;
+    width: 47px;
+    height: 29px;
   }
 
   .header__title::after {
     content: url('../../assets/icons/bamboo_small.png');
     top: 12px;
-    left: 8px;
+    left: 4px;
   }
 
   .header__text {
     font-size: 0.768rem;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .header__nav {
     padding-left: 0;
   }
-
-  /* .header__designed {
-    display: none;
-  } */
 
   .header__item {
     margin-left: 30px;
