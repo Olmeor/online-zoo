@@ -73,6 +73,10 @@
   transition: all 0.4s ease;
 }
 
+.watch__button_backstage {
+  display: none;
+}
+
 @media screen and (max-width: 1280px) {
 
   .watch {
@@ -144,32 +148,27 @@
     padding-top: 0;
   }
 
-  .watch__ellipse {
-    width: 119px;
-    height: 119px;
-    left: 51.7%;
-    top: 20px;
+  .watch__inner {
+    width: 600px;
   }
 
-  .watch__inner {
-    left: 0;
-    top: -80px;
+  .watch__inner::before {
+    width: 119px;
+    height: 119px;
+    top: 22px;
+    left: 27%;
   }
 
   .watch__text {
     font-size: 1.75rem;
+    top: 41px;
+    left: -4px;
+    overflow: hidden;
   }
 
-
-
-
-
-
-
-
-
-
-
-
+  .watch__button {
+    display: none;
+    position: unset;
+  }
 
 }

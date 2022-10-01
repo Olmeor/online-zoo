@@ -41,10 +41,6 @@
 }
 
 .pets__image {
-  /* position: relative; */
-  /* background-size: cover; */
-  /* width: 100%; */
-  /* height: 0; */
   padding-bottom: 100%;
   transition: 0.7s;
 }
@@ -357,4 +353,50 @@
     position: relative;
     top: -20px;
   }
+}
+
+@media screen and (max-width: 640px) {
+
+  .pets {
+    padding-bottom: 60px;
+    background-image: url('../../assets/images/palm_foto_4.jpg'), url('../../assets/images/strelitzia1_3.jpg');
+    background-size: 18%, 19%;
+
+  }
+  .pets__wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pets__cards {
+    padding: 0 17px;
+    margin: 0;
+  }
+
+  .pets__arrow {
+    display: none;
+  }
+
+  .pets__name {
+    line-height: 120%;
+  }
+
+  .pets__button {
+    position: unset;
+  }
+
+
+
+
+
+
+
+
+
+
 }

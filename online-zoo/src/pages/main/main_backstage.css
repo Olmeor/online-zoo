@@ -121,16 +121,47 @@
 
   .backstage {
     background-image: url('../../assets/images/flower_foto3.jpg');
-    background-position: right -20%;
-    padding-top: 70px;
-    padding-bottom: 77px;
+    background-position: right 11%;
+    padding-top: 20px;
+    padding-bottom: 39px;
   }
 
+  .watch__button_backstage {
+    display: flex;
+    margin: 0 auto;
 
+  }
 
+  .backstage__wrapper {
+    max-width: 320px;
+  }
 
+  .backstage__text {
+    width: 100%;
+    position: unset;
+    margin: 0 10px;
+    padding-right: 20px;
+  }
 
+  .backstage__title {
+    font-size: 1.5rem;
+    margin: 30px 0 12px 0;
+    padding-left: 0;
+  }
 
+  .backstage__p1 {
+    padding-left: 1px;
+    margin-bottom: 20px;
+  }
+
+  .backstage__p2 {
+    padding-left: 3px;
+    margin-bottom: 10px;
+  }
+
+  .backstage__p3 {
+    line-height: 138%;
+}
 
 
 
