@@ -149,21 +149,22 @@
   }
 
   .watch__inner {
-    width: 600px;
+    width: 320px;
   }
 
   .watch__inner::before {
     width: 119px;
     height: 119px;
     top: 22px;
-    left: 27%;
+    left: 163px;
   }
 
   .watch__text {
     font-size: 1.75rem;
     top: 41px;
-    left: -4px;
+    left: 86px;
     overflow: hidden;
+    width: 320px;
   }
 
   .watch__button {

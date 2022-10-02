@@ -159,6 +159,12 @@ header {
 
 @media screen and (max-width: 640px) {
 
+  .header__wrapper {
+    padding: 0 20px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   .header__nav,
   .header__designed {
     display: none;
@@ -167,4 +173,12 @@ header {
   .header__burger_open {
     display: block;
   }
+}
+
+@media screen and (max-width: 320px) {
+
+  .header__wrapper {
+    padding: 0 10px;
+  }
+
 }

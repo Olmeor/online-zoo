@@ -124,6 +124,7 @@
     background-position: right 11%;
     padding-top: 20px;
     padding-bottom: 39px;
+    overflow: hidden;
   }
 
   .watch__button_backstage {

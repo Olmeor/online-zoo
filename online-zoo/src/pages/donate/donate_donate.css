@@ -194,7 +194,7 @@
   z-index: 2;
   width: 40px;
   height: 40px;
-  background: url('../../assets/icons/roller_icon.svg');
+  background: url('../../assets/icons/roller_icon.svg') no-repeat center;
 }
 
 .donate__label span {
@@ -258,8 +258,8 @@
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type=number] {

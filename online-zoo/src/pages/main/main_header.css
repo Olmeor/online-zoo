@@ -176,3 +176,11 @@ header {
     display: block;
   }
 }
+
+@media screen and (max-width: 320px) {
+
+  .header__wrapper {
+    padding: 0 10px;
+  }
+
+}
