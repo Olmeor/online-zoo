@@ -10,7 +10,7 @@
 }
 
 .donate__container {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .donate__wrapper {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
   color: #333B41;
   background: rgba(253, 253, 255, 0.52);
@@ -143,8 +143,8 @@
   content: " ";
   position: absolute;
   height: 2px;
-  width: 92%;
-  top: 6%;
+  width: 94%;
+  top: 7%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #72828E;

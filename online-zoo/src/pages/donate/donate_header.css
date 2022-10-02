@@ -5,7 +5,7 @@ header {
 }
 
 .header__wrapper {
-  width: 1160px;
+  max-width: 1160px;
   height: 80px;
   color: white;
   display: flex;
@@ -105,7 +105,8 @@ header {
   }
 
   .header__wrapper {
-    width: 940px;
+    padding: 0 30px;
+    width: 100%;
   }
 
   .header__nav {
@@ -120,7 +121,6 @@ header {
 @media screen and (max-width: 999px) {
 
   .header__wrapper {
-    max-width: 640px;
     padding: 0 20px;
     height: 34px;
   }
