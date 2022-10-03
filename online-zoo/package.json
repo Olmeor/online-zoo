@@ -2,13 +2,15 @@
   "name": "momentum-webpack",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve --env development"
+    "dev": "webpack serve --env development",
+    "deploy": "npm run build && npx gh-pages -d dist -e online-zoo"
   },
   "author": "Mikhail Oleynikov (@Olmeor)",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.54.4",

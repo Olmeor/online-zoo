@@ -32,6 +32,9 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   position: relative;
   top: 85px;
@@ -56,6 +59,7 @@
   justify-content: center;
 	align-items: center;
   transition: all 0.4s ease;
+  padding-left: 4px;
   position: relative;
   top: 146px;
   left: 65.8%;

@@ -43,13 +43,22 @@
 }
 
 .backstage__p3 {
-  line-height: 140%;
+  line-height: 138%;
 }
 
 @media screen and (max-width: 1500px) {
   .backstage {
     background-image: url('../../assets/images/flower_foto2.jpg');
     background-position: right 20%;
+  }
+
+  .backstage__wrapper {
+    gap: 31px;
+  }
+
+  .backstage__img {
+    min-width: 455px;
+    height: 408px;
   }
 
   .backstage__text {
@@ -61,17 +70,12 @@
 
   .backstage {
     padding-top: 110px;
-    padding-bottom: 140px;
+    padding-bottom: 142px;
   }
 
   .backstage__wrapper {
     width: 940px;
     gap: 31px;
-  }
-
-  .backstage__img {
-    min-width: 455px;
-    height: 408px;
   }
 
   .backstage__title {
@@ -100,9 +104,9 @@
 
   .backstage {
     background-image: url('../../assets/images/flower_foto2.jpg');
-    background-position: right 10%;
+    background-position: right -5px;
     padding-top: 70px;
-    padding-bottom: 77px;
+    padding-bottom: 79px;
   }
 
   .backstage__wrapper {
@@ -150,7 +154,7 @@
 
   .backstage {
     background-image: url('../../assets/images/flower_foto3.jpg');
-    background-position: right 11%;
+    background-position: right 38px;
     padding: 20px 0 39px 0;
     overflow: hidden;
   }

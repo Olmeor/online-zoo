@@ -199,6 +199,28 @@
 
 }
 
+/* Add temp marker */
+
+@media screen and (max-width: 999px) {
+
+  .donate__amount-slider input[id="radio3"] + .donate__label::after {
+    opacity: 0;
+  }
+
+  .donate__label:nth-child(6) span {
+    color: #333b41;
+  }
+
+  .donate__amount-slider input[id="radio6"] + .donate__label::after {
+    opacity: 1;
+  }
+
+  .donate__label:nth-child(12) span {
+    color: #FE9013;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
   .donate__amount-slider::before {
