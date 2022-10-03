@@ -229,6 +229,14 @@
 
 }
 
+@media screen and (max-width: 640px) {
+
+  .donate__welcome {
+    margin-top: 34px;
+  }
+
+}
+
 @media screen and (max-width: 639px) {
 
   .donate {
