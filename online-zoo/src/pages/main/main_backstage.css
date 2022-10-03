@@ -159,11 +159,6 @@
     overflow: hidden;
   }
 
-  .watch__button_backstage {
-    display: flex;
-    margin: 0 auto;
-
-  }
 
   .backstage__wrapper {
     width: 90%;
@@ -195,11 +190,16 @@
 
   .backstage__p3 {
     line-height: 138%;
-}
+  }
 
 }
 
 @media screen and (max-width: 320px) {
+
+  .watch__button_backstage {
+    display: flex;
+    margin: 0 auto;
+  }
 
   .backstage__wrapper {
     width: 100%;
