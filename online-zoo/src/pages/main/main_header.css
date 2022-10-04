@@ -87,6 +87,37 @@ header {
   /* text-fill-color: transparent; */
 }
 
+.header__title-burger {
+  border: 0.8px solid #FE9013;
+  border-radius: 2px;
+  position: relative;
+  transition: 0.3s;
+  width: 65.6px;
+  height: 41.6px;
+  text-align: center;
+  z-index: 10;
+  display: none;
+}
+
+.header__title-burger::after {
+  content: url('../../assets/icons/bamboo-burger.png');
+  position: absolute;
+  top: 17px;
+  left: 8px;
+}
+
+.header__text-burger {
+  text-align: center;
+  font-size: 0.851rem;
+  line-height: 1.3;
+  margin-top: 2px;
+  color: #FE9013;
+}
+
+.header__title-burger {
+  display: none;
+}
+
 .header__burger_open {
   display: none;
   background: url('../../assets/icons/burger_menu_open.svg') no-repeat center;
@@ -98,6 +129,19 @@ header {
 
 .header__burger_open:hover {
   background: url('../../assets/icons/burger_menu_open_hover.svg') no-repeat center;
+  transition: all 0.4s ease;
+}
+
+.header__burger_close {
+  display: none;
+  background: url('../../assets/icons/burger_menu_close.svg') no-repeat center;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.header__burger_close:hover {
+  background: url('../../assets/icons/burger_menu_close_hover.svg') no-repeat center;
   transition: all 0.4s ease;
 }
 
@@ -183,6 +227,7 @@ header {
   .header__burger_open {
     display: block;
   }
+
 }
 
 @media screen and (max-width: 320px) {
