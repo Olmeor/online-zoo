@@ -245,7 +245,7 @@
 
   .donate__welcome {
     height: 187px;
-    background-position: bottom 0px left -149px;
+    background-position: bottom right;
   }
 
   .donate__container {
@@ -392,6 +392,11 @@
 }
 
 @media screen and (max-width: 540px)  {
+
+  .donate__welcome {
+    height: 187px;
+    background-position: bottom 0px left -149px;
+  }
 
   .donate__amount-slider::before {
     width: 86.2%;

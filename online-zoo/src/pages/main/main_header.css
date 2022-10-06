@@ -46,6 +46,10 @@ header {
   color: #FFFFFF;
 }
 
+.header__burger {
+  flex: 1 1 auto;
+}
+
 .header__nav {
   flex: 1 1 auto;
   padding-left: 3px;
