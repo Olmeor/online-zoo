@@ -1,12 +1,12 @@
 @keyframes move-right {
 	to {
-		left: -1160px;
+		left: -1250px;
 	}
 }
 
 @keyframes move-left {
 	to {
-		left: 1160px;
+		left: 1250px;
 	}
 }
 

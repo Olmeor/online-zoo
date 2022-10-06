@@ -12,15 +12,35 @@
   margin: 0 auto;
 }
 
-.pets__wrapper {
+.pets__slider-wrapper {
   width: 1190px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.pets__slider {
+  /* width: 1190px;
+  overflow: hidden; */
+  padding-bottom: 60px;
+  display: flex;
+	justify-content: center;
+	gap: 60px;
+	position: relative;
+	left: 0px;
+  margin: auto;
+}
+
+.pets__wrapper,
+.pets__wrapper_left,
+.pets__wrapper_right {
+  min-width: 1190px;
   display: flex;
   flex-wrap: wrap;
 	justify-content: center;
   margin: 0 -15px;
   margin: auto;
-  /* position: relative; */
-  padding-bottom: 60px;
+  position: relative;
+  /* padding-bottom: 60px; */
 }
 
 .pets__cards {
@@ -257,8 +277,11 @@
 
   .pets__wrapper {
     width: 970px;
-    margin-bottom: -12px;
+  }
+
+  .pets__slider {
     padding-bottom: 0;
+    margin-bottom: -12px;
   }
 
   .pets__inner {
