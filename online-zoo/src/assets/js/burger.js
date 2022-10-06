@@ -2,6 +2,8 @@
 
 // burgerOpen.onclick = openBurger;
 
+export const burgerOpen = document.querySelector('.header__burger_open');
+
 export function openBurger(e) {
 	const bodyShadow = document.querySelector('.body__shadow');
   const nav = document.querySelector('.header__nav');
