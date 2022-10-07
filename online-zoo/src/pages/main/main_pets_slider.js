@@ -7,173 +7,79 @@ const item0 = document.querySelector('.pets__wrapper_left');
 const item1 = document.querySelector('.pets__wrapper');
 const item2 = document.querySelector('.pets__wrapper_right');
 
-const initPetsArray = () => {
-  const pet_1 =
-  `
-<div id="pet_1" class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image pandas"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">giant Pandas</div>
-  				<div class="pets__place">Native to Southwest China</div>
-  			</div>
-  			<div class="banana"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
+const initPetsArray = (countSlide) => {
+	const objPets = [{
+		image: "pandas",
+		name: "giant Pandas",
+		place: "Native to Southwest China",
+		food: "banana",
+	}, {
+		image: "eagles",
+		name: "eagles",
+		place: "Native to South America",
+		food: "meat",
+	}, {
+		image: "gorillas",
+		name: "gorillas",
+		place: "Native to Congo",
+		food: "banana",
+	}, {
+		image: "alligators",
+		name: "alligators",
+		place: "Native to Southeastern U. S.",
+		food: "meat",
+	}, {
+		image: "sloths",
+		name: "Two-toed Sloth",
+		place: "Mesoamerica, South America",
+		food: "banana",
+	}, {
+		image: "cheetahs",
+		name: "cheetahs",
+		place: "Native to Africa",
+		food: "meat",
+	}, {
+		image: "penguins",
+		name: "Penguins",
+		place: "Native to Antarctica",
+		food: "meat",
+	}, {
+		image: "yeties",
+		name: "Yeties",
+		place: "Siberian tayga",
+		food: "meat",
+	}];
 
-  const pet_2 =
-  `
-<div id="pet_2"class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image eagles"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">Eagles</div>
-  				<div class="pets__place">Native to South America</div>
-  			</div>
-  			<div class="meat"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
+	let arr = [];
 
-  const pet_3 =
-  `
-<div id="pet_3" class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image gorillas"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">Gorillas</div>
-  				<div class="pets__place">Native to Congo</div>
-  			</div>
-  			<div class="banana"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
-
-  const pet_4 =
-  `
-<div id="pet_4" class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image alligators"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">Alligators</div>
-  				<div class="pets__place pets__place_alig_1">Native to Southeastern U. S.</div>
-  				<div class="pets__place pets__place_alig_2">Native to Southeastern United State</div>
-  			</div>
-  			<div class="meat"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
-
-  const pet_5 =
-  `
-<div id="pet_5" class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image sloths"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">Two-toed Sloth</div>
-  				<div class="pets__place">Mesoamerica, South America</div>
-  			</div>
-  			<div class="banana"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
-
-  const pet_6 =
-  `
-<div id="pet_6" class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image cheetahs"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">cheetahs</div>
-  				<div class="pets__place">Native to Africa</div>
-  			</div>
-  			<div class="meat"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
-
-  const pet_7 =
-  `
-<div id="pet_7" class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image penguins"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">Penguins</div>
-  				<div class="pets__place">Native to Antarctica</div>
-  			</div>
-  			<div class="meat"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
-
-  const pet_8 =
-  `
-<div id="pet_8" class="pets__cards">
-  <div class="pets__border">
-  	<div class="pets__frame">
-  		<div class="pets__image yeties"></div>
-  	</div>
-  	<div class="pets__title-wrapper">
-  		<div class="pets__title-shadow">
-  			<div class="pets__title">
-  				<div class="pets__name">Yeties</div>
-  				<div class="pets__place">Siberian tayga</div>
-  			</div>
-  			<div class="meat"></div>
-  		</div>
-  	</div>
-  </div>
-</div>
-  `;
-  return [pet_1, pet_2, pet_3, pet_4, pet_5, pet_6, pet_7, pet_8];
+	for (let i = 0; i < objPets.length; i++) {
+		arr[i] =
+		`
+		<div id="pet_${i}" class="pets__cards">
+			<div class="pets__border">
+				<div class="pets__frame">
+					<div class="pets__image ${objPets[i].image}"></div>
+				</div>
+				<div class="pets__title-wrapper">
+					<div class="pets__title-shadow">
+						<div class="pets__title">
+							<div class="pets__name">${objPets[i].name}</div>
+							<div class="pets__place">${objPets[i].place}</div>
+						</div>
+						<div class="${objPets[i].food}"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		`;
+	}
+	return arr;
 }
 
+let countSlide;
 let arrPets = initPetsArray();
 
-let countSlide;
+// let countSlide;
 
 const switchSize = () => {
 	let size = document.documentElement.clientWidth;
