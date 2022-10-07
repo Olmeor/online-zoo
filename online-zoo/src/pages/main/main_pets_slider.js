@@ -73,7 +73,7 @@ const initPetsArray = () => {
 <div id="pet_4" class="pets__cards">
   <div class="pets__border">
   	<div class="pets__frame">
-  		<div class="pets__image alligator"></div>
+  		<div class="pets__image alligators"></div>
   	</div>
   	<div class="pets__title-wrapper">
   		<div class="pets__title-shadow">
@@ -94,7 +94,7 @@ const initPetsArray = () => {
 <div id="pet_5" class="pets__cards">
   <div class="pets__border">
   	<div class="pets__frame">
-  		<div class="pets__image sloth"></div>
+  		<div class="pets__image sloths"></div>
   	</div>
   	<div class="pets__title-wrapper">
   		<div class="pets__title-shadow">

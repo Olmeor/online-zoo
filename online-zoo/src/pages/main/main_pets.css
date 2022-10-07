@@ -91,12 +91,12 @@
   background-size: contain;
 }
 
-.alligator {
+.alligators {
   background: url('../../assets/images/foto-card4-alligator.jpg') no-repeat center;
   background-size: contain;
 }
 
-.sloth {
+.sloths {
   background: url('../../assets/images/foto-card5-sloth.jpg') no-repeat center;
   background-size: contain;
 }
@@ -444,15 +444,25 @@
   }
 
   .pets__arrow_left {
-    left: 30px;
+    background: url('../../assets/icons/pets_arrow-small.svg') no-repeat center center;
+    transform: rotate(180deg);
+    left: 10px;
   }
 
   .pets__arrow_right {
-    right: 30px;
+    background: url('../../assets/icons/pets_arrow-small.svg') no-repeat center center;
+    right: 10px;
   }
 
   .pets__arrow {
-    top: -340px;
+    top: -240px;
+  }
+
+  .pets__arrow,
+  .pets__arrow:hover,
+  .pets__arrow:active {
+    background-color: transparent;
+    transition: none
   }
 
   .pets__name {
