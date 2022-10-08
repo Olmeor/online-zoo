@@ -26,3 +26,33 @@ document.onclick = closeWindows;
 
 testsInput.oninput = changeTest;
 
+const testsArrowUp = document.querySelector('.testimonial__arrow_up');
+const testsArrowDown = document.querySelector('.testimonial__arrow_down');
+let step = 0;
+
+const testUp = () => {
+  if (step < -990) return;
+  testsArrowUp.onclick = null;
+  const testsSlider = document.querySelector('.testimonial__slider');
+  const translateY = val => `translateY(${val})`;
+  step -= 124;
+  testsSlider.style.transform = translateY(step + 'px');
+
+  const waitUp = () => {testsArrowUp.onclick = testUp};
+  setTimeout(waitUp, 1000);
+}
+
+const testDown = () => {
+  if (step > -1) return;
+  testsArrowDown.onclick .onclick = null;
+  const testsSlider = document.querySelector('.testimonial__slider');
+  const translateY = val => `translateY(${val})`;
+  step += 124;
+  testsSlider.style.transform = translateY(step + 'px');
+
+  const waitUp = () => {testsArrowDown.onclick = testDown};
+  setTimeout(waitUp, 1000);
+}
+
+testsArrowUp.onclick = testUp;
+testsArrowDown.onclick = testDown;

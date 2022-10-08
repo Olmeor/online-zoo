@@ -100,11 +100,12 @@ const switchSize = () => {
 
 	// for testimonials input
 	const testsInput = document.querySelector('.testimonial__input');
-	if ( document.documentElement.clientWidth > 1280) {
+	if ( size > 1280) {
     testsInput.max = 7;
-  } else if (document.documentElement.clientWidth > 999) {
+  } else if (size > 999) {
     testsInput.max = 8;
   }
+
 }
 switchSize();
 window.onresize = switchSize;
