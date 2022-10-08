@@ -21,6 +21,7 @@ export function openBurger(e) {
 }
 
 // document.onclick = closeBurger;
+// document.onclick = closeWindows; // burger + testimonials
 
 export function closeBurger(e) {
 	const bodyShadow = document.querySelector('.body__shadow');

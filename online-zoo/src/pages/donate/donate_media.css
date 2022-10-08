@@ -201,7 +201,7 @@
 
 /* Add temp marker */
 
-@media screen and (max-width: 999px) {
+/* @media screen and (max-width: 999px) {
 
   .donate__amount-slider input[id="radio3"] + .donate__label::after {
     opacity: 0;
@@ -219,7 +219,7 @@
     color: #FE9013;
   }
 
-}
+} */
 
 @media screen and (max-width: 768px) {
 

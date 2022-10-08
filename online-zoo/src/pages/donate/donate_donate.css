@@ -359,10 +359,10 @@ input[type=number] {
 
 /* Add temp marker */
 
-.donate__amount-slider input[id="radio3"] + .donate__label::after {
+/* .donate__amount-slider input[id="radio3"] + .donate__label::after {
   opacity: 1;
 }
 
 .donate__label:nth-child(6) span {
   color: #FE9013;
-}
+} */

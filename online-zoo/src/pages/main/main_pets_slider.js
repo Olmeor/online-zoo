@@ -7,44 +7,52 @@ const item0 = document.querySelector('.pets__wrapper_left');
 const item1 = document.querySelector('.pets__wrapper');
 const item2 = document.querySelector('.pets__wrapper_right');
 
-const initPetsArray = (countSlide) => {
+const initPetsArray = () => {
 	const objPets = [{
-		image: "pandas",
+		image: "../../assets/images/foto-card1-panda.jpg",
+		class: "pandas",
 		name: "giant Pandas",
 		place: "Native to Southwest China",
 		food: "banana",
 	}, {
-		image: "eagles",
+		image: "../../assets/images/foto-card2-eagle.jpg",
+		class: "eagles",
 		name: "eagles",
 		place: "Native to South America",
 		food: "meat",
 	}, {
-		image: "gorillas",
+		image: "../../assets/images/foto-card3-gorilla.jpg",
+		class: "gorillas",
 		name: "gorillas",
 		place: "Native to Congo",
 		food: "banana",
 	}, {
-		image: "alligators",
+		image: "../../assets/images/foto-card4-alligator.jpg",
+		class: "alligators",
 		name: "alligators",
 		place: "Native to Southeastern U. S.",
 		food: "meat",
 	}, {
-		image: "sloths",
+		image: "../../assets/images/foto-card5-sloth.jpg",
+		class: "sloths",
 		name: "Two-toed Sloth",
 		place: "Mesoamerica, South America",
 		food: "banana",
 	}, {
-		image: "cheetahs",
+		image: "../../assets/images/foto-card6-cheetah.jpg",
+		class: "cheetahs",
 		name: "cheetahs",
 		place: "Native to Africa",
 		food: "meat",
 	}, {
-		image: "penguins",
+		image: "../../assets/images/foto-card7-penguin.jpg",
+		class: "penguins",
 		name: "Penguins",
 		place: "Native to Antarctica",
 		food: "meat",
 	}, {
-		image: "yeties",
+		image: "../../assets/images/foto-card8-yeti.jpg",
+		class: "yeties",
 		name: "Yeties",
 		place: "Siberian tayga",
 		food: "meat",
@@ -58,12 +66,12 @@ const initPetsArray = (countSlide) => {
 		<div id="pet_${i}" class="pets__cards">
 			<div class="pets__border">
 				<div class="pets__frame">
-					<div class="pets__image ${objPets[i].image}"></div>
+					<div class="pets__image ${objPets[i].class}"></div>
 				</div>
 				<div class="pets__title-wrapper">
 					<div class="pets__title-shadow">
 						<div class="pets__title">
-							<div class="pets__name">${objPets[i].name}</div>
+							<div class="pets__name">${objPets[i].name.toUpperCase()}</div>
 							<div class="pets__place">${objPets[i].place}</div>
 						</div>
 						<div class="${objPets[i].food}"></div>
