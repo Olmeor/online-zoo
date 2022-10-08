@@ -36,9 +36,8 @@
               <li class="header__item">
                 <a href="#zoos" class="header__link">Zoos</a>
               </li>
-              <li class="header__item">
+              <li class="header__item header__orange">
                 <a href="donate.html" class="header__link">Donate</a>
-                <!-- <a href="donate.html" class="header__link header__orange">Donate</a> -->
               </li>
               <li class="header__item">
                 <a href="#contact" class="header__link">Contact us</a>
@@ -94,60 +93,59 @@
               <input
                 type="radio"
                 class="donate__radio"
-                id="radio1"
+                id="radio0"
                 name="donate__amount"
                 value="5000"/>
-              <label for="radio1" class="donate__label"> <span>$5000</span> </label>
+              <label for="radio0" class="donate__label"> <span>$5000</span> </label>
+              <input
+                type="radio"
+                class="donate__radio"
+                id="radio1"
+                name="donate__amount"
+                value="2000"/>
+              <label for="radio1" class="donate__label"> <span>$2000</span> </label>
               <input
                 type="radio"
                 class="donate__radio"
                 id="radio2"
                 name="donate__amount"
-                value="2000"/>
-              <label for="radio2" class="donate__label"> <span>$2000</span> </label>
+                value="1000"/>
+              <label for="radio2" class="donate__label"> <span>$1000</span> </label>
               <input
                 type="radio"
                 class="donate__radio"
                 id="radio3"
                 name="donate__amount"
-                value="1000"/>
-                <!-- checked/> -->
-              <label for="radio3" class="donate__label"> <span>$1000</span> </label>
+                value="500"/>
+              <label for="radio3" class="donate__label"> <span>$500</span> </label>
               <input
                 type="radio"
                 class="donate__radio"
                 id="radio4"
                 name="donate__amount"
-                value="500"/>
-              <label for="radio4" class="donate__label"> <span>$500</span> </label>
+                value="250"/>
+              <label for="radio4" class="donate__label"> <span>$250</span> </label>
               <input
                 type="radio"
                 class="donate__radio"
                 id="radio5"
                 name="donate__amount"
-                value="250"/>
-              <label for="radio5" class="donate__label"> <span>$250</span> </label>
+                value="100"/>
+              <label for="radio5" class="donate__label"> <span>$100</span> </label>
               <input
                 type="radio"
                 class="donate__radio"
                 id="radio6"
                 name="donate__amount"
-                value="100"/>
-              <label for="radio6" class="donate__label"> <span>$100</span> </label>
-              <input
-                type="radio"
-                class="donate__radio"
-                id="radio7"
-                name="donate__amount"
                 value="50"/>
-              <label for="radio7" class="donate__label"> <span>$50</span> </label>
+              <label for="radio6" class="donate__label"> <span>$50</span> </label>
                 <input
                   type="radio"
                   class="donate__radio"
-                  id="radio8"
+                  id="radio7"
                   name="donate__amount"
                   value="25"/>
-                <label for="radio8" class="donate__label"> <span>$25</span> </label>
+                <label for="radio7" class="donate__label"> <span>$25</span> </label>
             </form>
           </div>
 
@@ -158,16 +156,14 @@
               min="1"
               max="9999"
               step="1"
-              placeholder="Another amount"
-            />
+              placeholder="Another amount"/>
             <div class="donate__radio-wrapper">
               <div>
                 <input
                   type="radio"
                   id="pay-monthly"
                   name="donate__period"
-                  value="monthly"
-                />
+                  value="monthly"/>
                 <label for="pay-monthly">Monthly</label>
               </div>
               <div>
@@ -176,8 +172,7 @@
                   id="pay-once"
                   name="donate__period"
                   value="once"
-                  checked="checked"
-                />
+                  checked="checked"/>
                 <label for="pay-once">Once</label>
               </div>
             </div>
