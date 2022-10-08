@@ -105,7 +105,7 @@ const initTestsArray = () => {
 
 initTestsArray();
 
-const testsCards = document.querySelectorAll('.testimonial__cards');
+export const testsCards = document.querySelectorAll('.testimonial__cards');
 
 export function openTest(e) {
   const popup = document.querySelector('.testimonial__popup');

@@ -30,26 +30,20 @@
 .testimonial__slider {
   /* width: 1190px; */
   display: flex;
-	justify-content: center;
+	/* justify-content: center; */
   margin: 0 -15px 20px -15px;
   position: relative;
   padding: 2px 2px 0 2px;
+  position: relative;
+  /* left: 0; */
+  transition: transform 1s;
+  /* transition: ease-in-out 1s; */
 }
 
 .testimonial__cards {
-  flex: 0 1 25%;
+  /* flex: 0 1 25%; */
+  min-width: 296.5px;
   padding: 0 15px;
-}
-
-#test-4,
-#test-5,
-#test-6,
-#test-7,
-#test-8,
-#test-9,
-#test-10,
-#test-11 {
-  display: none;
 }
 
 .testimonial__border {
@@ -211,11 +205,66 @@
   transition: all 0.4s ease;
 }
 
-@media screen and (max-width: 1280px) {
+/* popup */
 
-  #test-3 {
-    display: none;
-  }
+.hidden-block {
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+  min-height: 0;
+  padding: 0;
+	margin: 0;
+  font-size: 0;
+	transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+
+.body__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 20;
+  display: none;
+}
+
+._active {
+  display: block;
+}
+
+.testimonial__popup {
+  position: absolute;
+  width: calc(100% - 40px);
+  height: auto;
+  top: 30px;
+  left: 0;
+  margin: 20px;
+  transition: all 0.4s ease;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial__popup .testimonial__text {
+  -webkit-line-clamp: unset;
+}
+
+.testimonial__popup .testimonial__border {
+  height: auto;
+}
+
+.testimonial__popup_close {
+  background: url('../../assets/icons/burger_menu_close_hover.svg') no-repeat center;
+  min-width: 14px;
+  height: 14px;
+  cursor: pointer;
+  transition: 0.4s all linear;
+}
+
+@media screen and (max-width: 1280px) {
 
   .testimonial {
     padding: 100px 0 140px 0;
@@ -239,7 +288,8 @@
   } */
 
   .testimonial__cards {
-    flex: 0 1 33.333%;
+    /* flex: 0 1 33.333%; */
+    min-width: 322px;
   }
 
   .testimonial__info_3 {
@@ -269,6 +319,18 @@
 
 @media screen and (max-width: 999px) {
 
+  #test-3,
+  #test-4,
+  #test-5,
+  #test-6,
+  #test-7,
+  #test-8,
+  #test-9,
+  #test-10,
+  #test-11 {
+    display: none;
+  }
+
   .testimonial {
     padding: 62px 0 80px 0;
     background-image: url('../../assets/images/leav_foto_3.jpg');
@@ -295,6 +357,7 @@
 
   .testimonial__cards {
     padding: 0 21px;
+    width: auto;
   }
 
   .testimonial__border {
@@ -366,63 +429,6 @@
 
 }
 
-/* popup */
 
-.hidden-block {
-	opacity: 0;
-	visibility: hidden;
-	overflow: hidden;
-  min-height: 0;
-  padding: 0;
-	margin: 0;
-  font-size: 0;
-	transform: scale(0, 0);
-  transition: all 0.4s ease;
-}
-
-.body__shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 20;
-  display: none;
-}
-
-._active {
-  display: block;
-}
-
-.testimonial__popup {
-  position: absolute;
-  width: calc(100% - 40px);
-  height: auto;
-  top: 30px;
-  left: 0;
-  margin: 20px;
-  transition: all 0.4s ease;
-  z-index: 2;
-  display: flex;
-  gap: 10px;
-}
-
-.testimonial__popup .testimonial__text {
-  -webkit-line-clamp: unset;
-}
-
-.testimonial__popup .testimonial__border {
-  height: auto;
-}
-
-.testimonial__popup_close {
-  background: url('../../assets/icons/burger_menu_close_hover.svg') no-repeat center;
-  min-width: 14px;
-  height: 14px;
-  cursor: pointer;
-  transition: 0.4s all linear;
-}
 
 

@@ -97,6 +97,14 @@ const switchSize = () => {
 	item0.innerHTML = generatePetCard(arrPets, countSlide, item0).innerHTML;
   item1.innerHTML = generatePetCard(arrPets, countSlide, item1).innerHTML;
   item2.innerHTML = generatePetCard(arrPets, countSlide, item2).innerHTML;
+
+	// for testimonials input
+	const testsInput = document.querySelector('.testimonial__input');
+	if ( document.documentElement.clientWidth > 1280) {
+    testsInput.max = 7;
+  } else if (document.documentElement.clientWidth > 999) {
+    testsInput.max = 8;
+  }
 }
 switchSize();
 window.onresize = switchSize;
