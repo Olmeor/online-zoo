@@ -107,7 +107,7 @@ const switchSize = () => {
   } else if (size > 999) {
     testsInput.max = 8;
   }
-	testsInput.value = 1;
+	testsInput.value = 0;
 	changeTest();
 }
 switchSize();
