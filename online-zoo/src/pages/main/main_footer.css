@@ -11,10 +11,6 @@ footer {
   justify-content: space-between;
 }
 
-/* .footer__column {
-  flex: 0 1 33.333%;
-} */
-
 .footer__title {
   border: 1px solid #FFFFFF;
   border-radius: 2px;

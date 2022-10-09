@@ -11,10 +11,6 @@ footer {
   justify-content: space-between;
 }
 
-/* .footer__column {
-  flex: 0 1 33.333%;
-} */
-
 .footer__logo {
   margin-top: -2px;
   display: inline-block;
@@ -493,7 +489,6 @@ footer {
     font-size: 0.9375rem;
     right: 10px;
     bottom: 18px;
-    /* color: #FFFFFF; */
   }
 
 }

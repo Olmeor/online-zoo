@@ -239,9 +239,21 @@
   transition: all 0.4s ease;
 }
 
+@-webkit-keyframes move-right {
+	to {
+		left: -1250px;
+	}
+}
+
 @keyframes move-right {
 	to {
 		left: -1250px;
+	}
+}
+
+@-webkit-keyframes move-left {
+	to {
+		left: 1250px;
 	}
 }
 
@@ -252,12 +264,16 @@
 }
 
 .transition-right {
+	-webkit-animation-name: move-right;
 	animation-name: move-right;
+	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
 }
 
 .transition-left {
+	-webkit-animation-name: move-left;
 	animation-name: move-left;
+	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
 }
 
@@ -310,9 +326,21 @@
     top: -512px;
   }
 
+  @-webkit-keyframes move-right {
+		to {
+			left: -1030px;
+		}
+	}
+
   @keyframes move-right {
 		to {
 			left: -1030px;
+		}
+	}
+
+	@-webkit-keyframes move-left {
+		to {
+			left: 1030px;
 		}
 	}
 
@@ -397,9 +425,21 @@
     top: -20px;
   }
 
+  @-webkit-keyframes move-right {
+		to {
+			left: -700px;
+		}
+	}
+
   @keyframes move-right {
 		to {
 			left: -700px;
+		}
+	}
+
+	@-webkit-keyframes move-left {
+		to {
+			left: 700px;
 		}
 	}
 
@@ -473,9 +513,21 @@
     position: unset;
   }
 
+  @-webkit-keyframes move-right {
+		to {
+			left: -380px;
+		}
+	}
+
   @keyframes move-right {
 		to {
 			left: -380px;
+		}
+	}
+
+	@-webkit-keyframes move-left {
+		to {
+			left: 380px;
 		}
 	}
 

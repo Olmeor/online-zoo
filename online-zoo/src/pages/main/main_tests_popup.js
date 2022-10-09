@@ -112,7 +112,7 @@ export function openTest(e) {
   const bodyShadow = document.querySelector('.body__shadow');
   let size = document.documentElement.clientWidth;
   e.stopPropagation();
-  if (size < 641) {
+  if (size < 1000) {
     popup.classList.remove('hidden-block');
     bodyShadow.classList.add('_active');
     popup.innerHTML = e.currentTarget.innerHTML;

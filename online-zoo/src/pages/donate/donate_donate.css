@@ -356,13 +356,3 @@ input[type=number] {
   margin: 33px 0 0 0;
   padding-left: 5px;
 }
-
-/* Add temp marker */
-
-/* .donate__amount-slider input[id="radio3"] + .donate__label::after {
-  opacity: 1;
-}
-
-.donate__label:nth-child(6) span {
-  color: #FE9013;
-} */
