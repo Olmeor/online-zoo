@@ -34,6 +34,21 @@ const addAmount = (e) => {
 amountArr.forEach(e => e.onclick = addAmount);
 
 const recheckAmount = () => {
+
+  if (amountField.value.length > 4) {
+    // setTimeout(() => {
+    //   amountField.value = amountField.value.slice(0, -1);
+    // }, "500")
+    amountField.value = amountField.value.slice(0, -1);
+  }
+
+  if (amountField.value == 0) {
+    // setTimeout(() => {
+    //   amountField.value = '';
+    // }, "500")
+    amountField.value = '';
+  }
+
   for (let item of amountArr) {
     if (item.value == amountField.value) {
       item.checked = true;

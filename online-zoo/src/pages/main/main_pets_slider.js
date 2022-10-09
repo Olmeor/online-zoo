@@ -1,5 +1,7 @@
 // Pets slider
 
+import { changeTest } from "./main_tests_slider";
+
 export const arrowLeft = document.querySelector('.pets__arrow_left');
 export const arrowRight = document.querySelector('.pets__arrow_right');
 const slider = document.querySelector('.pets__slider');
@@ -105,7 +107,8 @@ const switchSize = () => {
   } else if (size > 999) {
     testsInput.max = 8;
   }
-
+	testsInput.value = 1;
+	changeTest();
 }
 switchSize();
 window.onresize = switchSize;

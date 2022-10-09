@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var WebpackObfuscator = require('webpack-obfuscator');
 
 const devServer = (isDev) => !isDev ? {} : {
   devServer: {
@@ -16,7 +15,7 @@ const devServer = (isDev) => !isDev ? {} : {
 
 module.exports = ({ development }) => ({
   mode: development ? 'development' : 'production',
-  devtool: development ? 'inline-source-map' : false,
+  devtool: development ? 'source-map' : false,
   entry: {
     index: './src/pages/main/script.js',
     donate: './src/pages/donate/donate.js',
@@ -55,19 +54,6 @@ module.exports = ({ development }) => ({
         test: /\.(mp3|ogg)$/,
         type: 'asset/resource',
       },
-      {
-        test: /\.js$/,
-        exclude: [
-            path.resolve(__dirname, 'excluded_file_name.js')
-        ],
-        enforce: 'post',
-        use: {
-            loader: WebpackObfuscator.loader,
-            options: {
-                rotateStringArray: true
-            }
-        }
-      },
     ]
   },
   plugins: [
@@ -103,9 +89,6 @@ module.exports = ({ development }) => ({
     //   ],
     // }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    new WebpackObfuscator ({
-      rotateStringArray: true
-      }, ['excluded_bundle_name.js']),
   ],
   resolve: {
     extensions: ['.ts', '.js'],

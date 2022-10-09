@@ -12,8 +12,7 @@ import '../../assets/styles/burger.css'
 import { burgerOpen, openBurger, closeBurger } from '../../assets/js/burger'
 import { arrowLeft, arrowRight, moveLeft, moveRight } from './main_pets_slider'
 import { testsCards, openTest, closeWindows } from './main_tests_popup'
-import { testsInput, testsArrowUp, testsArrowDown, changeTest, testUp,
-        testDown } from './main_tests_slider'
+import { testsInput, testsArrowUp, testsArrowDown, changeTest, testUp, testDown } from './main_tests_slider'
 
 burgerOpen.onclick = openBurger;
 document.onclick = closeBurger;
