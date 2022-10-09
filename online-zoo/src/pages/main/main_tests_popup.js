@@ -126,7 +126,6 @@ function closeTest(e) {
 
   popup.classList.add('hidden-block');
   bodyShadow.classList.remove('_active');
-  // document.body.style = "overflow: none";
 }
 
 testsCards.forEach(e => e.onclick = openTest);
@@ -134,9 +133,15 @@ testsCards.forEach(e => e.onclick = openTest);
 export function closeWindows(e) {
   const nav = document.querySelector('.header__nav');
   const popup = document.querySelector('.testimonial__popup');
+  const testPopupClose = document.querySelector('.testimonial__popup_close');
 
   if (nav.classList.contains('header__nav_open')) closeBurger(e);
-  if (!popup.classList.contains('hidden-block')) closeTest(e);
+  // if (!popup.classList.contains('hidden-block')) closeTest(e);
+  if (!popup.classList.contains('hidden-block') &&
+      (e.target == testPopupClose ||
+        e.target.classList.contains('body__shadow'))) {
+          closeTest(e)
+        }
 }
 
 document.onclick = closeWindows;
