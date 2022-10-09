@@ -111,8 +111,28 @@
   background-size: contain;
 }
 
-.yeties {
-  background: url('../../assets/images/foto-card8-yeti.jpg') no-repeat center;
+.koalas {
+  background: url('../../assets/images/foto-card8-koala.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.deers {
+  background: url('../../assets/images/foto-card9-deer.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.wolves {
+  background: url('../../assets/images/foto-card10-wolf.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.seals {
+  background: url('../../assets/images/foto-card11-seal.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.kangaroos {
+  background: url('../../assets/images/foto-card12-kangaroo.jpg') no-repeat center;
   background-size: contain;
 }
 
