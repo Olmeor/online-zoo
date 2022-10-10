@@ -136,6 +136,21 @@
   background-size: contain;
 }
 
+.giraffes {
+  background: url('../../assets/images/foto-card13-giraffe.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.bears {
+  background: url('../../assets/images/foto-card14-bear.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.peacocks {
+  background: url('../../assets/images/foto-card15-peacock.jpg') no-repeat center;
+  background-size: contain;
+}
+
 .pets__title-wrapper {
   padding: 8px 10px 12px 15px;
   color: #000000;

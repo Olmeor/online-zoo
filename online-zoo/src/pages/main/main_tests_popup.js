@@ -92,7 +92,7 @@ const initTestsArray = () => {
           <div class="testimonial__title">
             <p class="testimonial__name">${objTests[i].name}</p>
             <p class="testimonial__local">
-              <span>${objTests[i].place}</span><span>${objTests[i].day}</span>
+              <span>${objTests[i].place}</span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<span>${objTests[i].day}</span>
             </p>
           </div>
         </div>

@@ -83,6 +83,24 @@ const initPetsArray = () => {
 		name: "Kangaroos",
 		place: "Native to Australia",
 		food: "banana",
+	}, {
+		image: "../../assets/images/foto-card13-giraffe.jpg",
+		class: "giraffes",
+		name: "Giraffes",
+		place: "Native to Africa",
+		food: "banana",
+	}, {
+		image: "../../assets/images/foto-card14-bear.jpg",
+		class: "bears",
+		name: "Polar Bears",
+		place: "Native to Alaska, U. S.",
+		food: "meat",
+	}, {
+		image: "../../assets/images/foto-card15-peacock.jpg",
+		class: "peacocks",
+		name: "Peacocks",
+		place: "Native to India",
+		food: "banana",
 	}];
 
 	let arr = [];
