@@ -198,12 +198,14 @@ export const moveRight = () => {
 slider.onanimationend = (animation) => {
 	if (animation.animationName === 'move-left') {;
 		slider.classList.remove('transition-left');
-		item2.innerHTML = item1.innerHTML;
+		// item2.innerHTML = item1.innerHTML;
+		item2.innerHTML = generatePetCard(arrPets, countSlide, item2).innerHTML;
 		item1.innerHTML = item0.innerHTML;
 		item0.innerHTML = generatePetCard(arrPets, countSlide, item0).innerHTML;
 	} else {
 		slider.classList.remove('transition-right');
-		item0.innerHTML = item1.innerHTML;
+		// item0.innerHTML = item1.innerHTML;
+		item0.innerHTML = generatePetCard(arrPets, countSlide, item0).innerHTML;
 		item1.innerHTML = item2.innerHTML;
 		item2.innerHTML = generatePetCard(arrPets, countSlide, item2).innerHTML;
 	}
