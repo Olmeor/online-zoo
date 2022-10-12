@@ -101,6 +101,18 @@ const initPetsArray = () => {
 		name: "Peacocks",
 		place: "Native to India",
 		food: "banana",
+	}, {
+		image: "../../assets/images/foto-card16-fennec.jpg",
+		class: "fennec",
+		name: "Fennec foxes",
+		place: "Native to Western Sahara",
+		food: "meat",
+	}, {
+		image: "../../assets/images/foto-card17-red_panda.jpg",
+		class: "red_panda",
+		name: "Red Pandas",
+		place: "Eastern Himalayas",
+		food: "banana",
 	}];
 
 	let arr = [];

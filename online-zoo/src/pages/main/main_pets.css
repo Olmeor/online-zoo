@@ -151,6 +151,16 @@
   background-size: contain;
 }
 
+.fennec {
+  background: url('../../assets/images/foto-card16-fennec.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.red_panda {
+  background: url('../../assets/images/foto-card17-red_panda.jpg') no-repeat center;
+  background-size: contain;
+}
+
 .pets__title-wrapper {
   padding: 8px 10px 12px 15px;
   color: #000000;
